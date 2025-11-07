@@ -1,0 +1,9 @@
+# robots.txt para Vecinity
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://vecinity.mx/sitemap.xml
+
+# Crawl-delay (opcional)
+# Crawl-delay: 1

@@ -76,15 +76,12 @@
 
     <!-- Preload Critical Assets -->
     <link rel="preload" href="assets/images/logo.png" as="image">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preload" href="fonts/inter-400.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="fonts/inter-700.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
-    <!-- Google Fonts with font-display swap and preload -->
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"></noscript>
+    <!-- Inter Font - Local -->
+    <link rel="stylesheet" href="fonts/inter-local.css">
 
     <!-- Font Awesome with defer -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
@@ -129,32 +126,11 @@
         @keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
     </style>
 
-    <!-- Custom CSS - Minified & Deferred -->
-    <link rel="stylesheet" href="styles.min.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="styles.min.css"></noscript>
+    <!-- Tailwind CSS - Local optimizado -->
+    <link rel="stylesheet" href="tailwind-generated.css">
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Tailwind Config -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#667EEA',
-                        secondary: '#764BA2',
-                        success: '#4CAF50',
-                        warning: '#FF9800',
-                        info: '#2196F3',
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    },
-                }
-            }
-        }
-    </script>
+    <!-- Custom CSS - Minified -->
+    <link rel="stylesheet" href="styles.min.css">
 </head>
 <body class="font-sans antialiased">
 
