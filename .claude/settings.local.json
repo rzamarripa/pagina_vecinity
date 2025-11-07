@@ -3,7 +3,14 @@
     "allow": [
       "Bash(curl:*)",
       "Bash(unzip:*)",
-      "WebFetch(domain:pagespeed.web.dev)"
+      "WebFetch(domain:pagespeed.web.dev)",
+      "Bash(convert:*)",
+      "Bash(magick:*)",
+      "Bash(npx tailwindcss:*)",
+      "Bash(npm install:*)",
+      "Bash(purgecss:*)",
+      "Bash(tailwind-original.css)",
+      "Bash(tailwind-generated.css)"
     ],
     "deny": [],
     "ask": []
