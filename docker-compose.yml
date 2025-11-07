@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  # Nginx Web Server para servir la landing page
+  nginx:
+    image: nginx:alpine
+    container_name: vecinity-landing
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      # Montar archivos de la landing page
+      - ./index.html:/usr/share/nginx/html/index.html:ro
+      - ./styles.css:/usr/share/nginx/html/styles.css:ro
+      - ./script.js:/usr/share/nginx/html/script.js:ro
+      - ./assets:/usr/share/nginx/html/assets:ro
+      # Configuración personalizada de Nginx
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      # Para SSL/HTTPS (opcional)
+      # - ./ssl:/etc/nginx/ssl:ro
+    networks:
+      - vecinity-network
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    labels:
+      - "com.vecinity.service=landing-page"
+      - "com.vecinity.environment=production"
+
+networks:
+  vecinity-network:
+    driver: bridge
