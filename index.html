@@ -74,19 +74,36 @@
     <meta name="geo.region" content="MX">
     <meta name="geo.placename" content="México">
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Google Fonts -->
+    <!-- Preload Critical Assets -->
+    <link rel="preload" href="assets/images/logo.png" as="image">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts with font-display swap -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"></noscript>
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome with defer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+
+    <!-- Critical CSS Inline -->
+    <style>
+        /* Critical Above-the-fold CSS */
+        body{font-family:Inter,sans-serif;margin:0;padding:0}
+        #navbar{position:fixed;width:100%;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(12px)}
+        .hero-section{padding-top:8rem}
+        /* Prevent FOUC */
+        .hidden{display:none !important}
+    </style>
+
+    <!-- Custom CSS - Minified -->
+    <link rel="stylesheet" href="styles.min.css">
+
+    <!-- Tailwind CSS - deferred -->
+    <script src="https://cdn.tailwindcss.com" defer></script>
 
     <!-- Tailwind Config -->
     <script>
@@ -117,7 +134,7 @@
                 <!-- Logo -->
                 <div class="flex items-center">
                     <a href="#inicio" class="flex items-center space-x-3">
-                        <img src="assets/images/logo.png" alt="Vecinity Logo" class="w-12 h-12">
+                        <img src="assets/images/logo.png" alt="Vecinity Logo" class="w-12 h-12" width="48" height="48" loading="eager">
                         <span class="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Vecinity</span>
                     </a>
                 </div>
@@ -157,7 +174,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="inicio" class="pt-32 pb-20 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 overflow-hidden">
+    <section id="inicio" class="hero-section pt-32 pb-20 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <!-- Left Content -->
@@ -867,7 +884,7 @@
                 <!-- Logo & Description -->
                 <div class="col-span-2 md:col-span-1">
                     <div class="flex items-center space-x-3 mb-4">
-                        <img src="assets/images/logo.png" alt="Vecinity Logo" class="w-10 h-10">
+                        <img src="assets/images/logo.png" alt="Vecinity Logo" class="w-10 h-10" width="40" height="40" loading="lazy">
                         <span class="text-xl font-bold">Vecinity</span>
                     </div>
                     <p class="text-gray-400 text-sm">
@@ -932,7 +949,7 @@
         </div>
     </footer>
 
-    <!-- Custom JavaScript -->
-    <script src="script.js"></script>
+    <!-- Custom JavaScript - Minified & Deferred -->
+    <script src="script.min.js" defer></script>
 </body>
 </html>

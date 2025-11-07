@@ -1,0 +1,33 @@
+/* Vecinity Landing - Optimized CSS */
+html{scroll-behavior:smooth}
+::-webkit-scrollbar{width:10px}
+::-webkit-scrollbar-track{background:#f1f1f1}
+::-webkit-scrollbar-thumb{background:linear-gradient(to bottom,#667EEA,#764BA2);border-radius:5px}
+::-webkit-scrollbar-thumb:hover{background:linear-gradient(to bottom,#5568D3,#653A8B)}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+@keyframes slideInRight{from{transform:translateX(400px);opacity:0}to{transform:translateX(0);opacity:1}}
+@keyframes slideDown{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:translateY(0)}}
+@keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.card-hover{transition:all .3s ease}
+.card-hover:hover{transform:translateY(-10px);box-shadow:0 20px 40px rgba(0,0,0,.1)}
+.navbar-scrolled{background-color:rgba(255,255,255,.98);backdrop-filter:blur(10px);box-shadow:0 2px 20px rgba(0,0,0,.1)}
+section{position:relative;overflow:hidden}
+.faq-content{max-height:0;overflow:hidden;transition:max-height .3s ease-out}
+.faq-content.active{max-height:500px;transition:max-height .5s ease-in}
+.faq-button i{transition:transform .3s ease}
+.faq-button.active i{transform:rotate(180deg)}
+.form-input{transition:all .3s ease}
+.form-input:focus{border-color:#667EEA;box-shadow:0 0 0 3px rgba(102,126,234,.1)}
+.toast{position:fixed;bottom:30px;right:30px;padding:16px 24px;border-radius:12px;box-shadow:0 10px 40px rgba(0,0,0,.2);z-index:1000;animation:slideInRight .5s ease;max-width:400px}
+.toast.success{background:linear-gradient(135deg,#4CAF50,#45B049);color:white}
+.toast.error{background:linear-gradient(135deg,#f44336,#da190b);color:white}
+.toast.info{background:linear-gradient(135deg,#2196F3,#0b7dda);color:white}
+.spinner{border:3px solid rgba(102,126,234,.1);border-top:3px solid #667EEA;border-radius:50%;width:24px;height:24px;animation:spin 1s linear infinite;display:inline-block}
+#mobile-menu{transition:all .3s ease-out}
+#mobile-menu.hidden{display:none}
+#mobile-menu:not(.hidden){display:block;animation:slideDown .3s ease-out}
+.icon-box{width:64px;height:64px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:28px;transition:all .3s ease}
+.icon-box:hover{transform:rotate(5deg) scale(1.1)}
+a:focus,button:focus,input:focus,textarea:focus,select:focus{outline:2px solid #667EEA;outline-offset:2px}
+@media(max-width:768px){.toast{bottom:20px;right:20px;left:20px;max-width:none}section{padding:60px 0}}
+@media print{nav,footer,#contacto{display:none}}
