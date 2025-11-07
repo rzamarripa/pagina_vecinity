@@ -1,1032 +1,2087 @@
 <!DOCTYPE html>
 <html lang="es-MX" dir="ltr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Language" content="es-MX">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Language" content="es-MX" />
 
     <!-- Primary Meta Tags -->
-    <title>Vecinity - Gestión Inteligente de Comunidades | Administra tu Condominio o Fraccionamiento</title>
-    <meta name="title" content="Vecinity - Gestión Inteligente de Comunidades | Administra tu Condominio o Fraccionamiento">
-    <meta name="description" content="Transforma la gestión de tu comunidad con Vecinity. Controla finanzas, pagos, gastos y comunicación en tiempo real. Ideal para condominios, fraccionamientos y vecindarios en México. Prueba gratis 30 días.">
-    <meta name="keywords" content="gestión de comunidades, administración de condominios, fraccionamientos, vecindario digital, pagos comunitarios, transparencia financiera, gestión vecinal, app para condominios, México, software administración condominio">
-    <meta name="author" content="Vecinity">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="language" content="es-MX">
-    <meta name="revisit-after" content="7 days">
-    <meta name="rating" content="General">
+    <title>
+      Vecinity - Gestión Inteligente de Comunidades | Administra tu Condominio o
+      Fraccionamiento
+    </title>
+    <meta
+      name="title"
+      content="Vecinity - Gestión Inteligente de Comunidades | Administra tu Condominio o Fraccionamiento"
+    />
+    <meta
+      name="description"
+      content="Transforma la gestión de tu comunidad con Vecinity. Controla finanzas, pagos, gastos y comunicación en tiempo real. Ideal para condominios, fraccionamientos y vecindarios en México. Prueba gratis 30 días."
+    />
+    <meta
+      name="keywords"
+      content="gestión de comunidades, administración de condominios, fraccionamientos, vecindario digital, pagos comunitarios, transparencia financiera, gestión vecinal, app para condominios, México, software administración condominio"
+    />
+    <meta name="author" content="Vecinity" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta name="language" content="es-MX" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="rating" content="General" />
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://vecinity.mx/">
+    <link rel="canonical" href="https://vecinity.mx/" />
 
     <!-- Alternate Languages (hreflang) -->
-    <link rel="alternate" hreflang="es-MX" href="https://vecinity.mx/">
-    <link rel="alternate" hreflang="es" href="https://vecinity.mx/">
-    <link rel="alternate" hreflang="x-default" href="https://vecinity.mx/">
+    <link rel="alternate" hreflang="es-MX" href="https://vecinity.mx/" />
+    <link rel="alternate" hreflang="es" href="https://vecinity.mx/" />
+    <link rel="alternate" hreflang="x-default" href="https://vecinity.mx/" />
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://vecinity.mx/">
-    <meta property="og:title" content="Vecinity - Gestión Inteligente de Comunidades">
-    <meta property="og:description" content="La plataforma integral para gestionar tu comunidad de forma fácil, transparente y eficiente. Administra finanzas, comunicación y eventos en un solo lugar.">
-    <meta property="og:image" content="https://vecinity.mx/assets/images/android-chrome-512x512.png">
-    <meta property="og:image:width" content="512">
-    <meta property="og:image:height" content="512">
-    <meta property="og:locale" content="es_MX">
-    <meta property="og:site_name" content="Vecinity">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vecinity.mx/" />
+    <meta
+      property="og:title"
+      content="Vecinity - Gestión Inteligente de Comunidades"
+    />
+    <meta
+      property="og:description"
+      content="La plataforma integral para gestionar tu comunidad de forma fácil, transparente y eficiente. Administra finanzas, comunicación y eventos en un solo lugar."
+    />
+    <meta
+      property="og:image"
+      content="https://vecinity.mx/assets/images/android-chrome-512x512.png"
+    />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:locale" content="es_MX" />
+    <meta property="og:site_name" content="Vecinity" />
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://vecinity.mx/">
-    <meta name="twitter:title" content="Vecinity - Gestión Inteligente de Comunidades">
-    <meta name="twitter:description" content="La plataforma integral para gestionar tu comunidad de forma fácil, transparente y eficiente.">
-    <meta name="twitter:image" content="https://vecinity.mx/assets/images/android-chrome-512x512.png">
-    <meta name="twitter:creator" content="@vecinity">
-    <meta name="twitter:site" content="@vecinity">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://vecinity.mx/" />
+    <meta
+      name="twitter:title"
+      content="Vecinity - Gestión Inteligente de Comunidades"
+    />
+    <meta
+      name="twitter:description"
+      content="La plataforma integral para gestionar tu comunidad de forma fácil, transparente y eficiente."
+    />
+    <meta
+      name="twitter:image"
+      content="https://vecinity.mx/assets/images/android-chrome-512x512.png"
+    />
+    <meta name="twitter:creator" content="@vecinity" />
+    <meta name="twitter:site" content="@vecinity" />
 
     <!-- Favicons -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="/assets/images/android-chrome-512x512.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/images/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/assets/images/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="/assets/images/android-chrome-512x512.png"
+    />
 
     <!-- Web App Manifest -->
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="/manifest.json" />
 
     <!-- Microsoft Tiles -->
-    <meta name="msapplication-TileColor" content="#667EEA">
-    <meta name="msapplication-config" content="/browserconfig.xml">
+    <meta name="msapplication-TileColor" content="#667EEA" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
 
     <!-- Theme Color -->
-    <meta name="theme-color" content="#667EEA">
-    <meta name="msapplication-navbutton-color" content="#667EEA">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#667EEA">
+    <meta name="theme-color" content="#667EEA" />
+    <meta name="msapplication-navbutton-color" content="#667EEA" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#667EEA" />
 
     <!-- Apple Mobile Web App -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="Vecinity">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Vecinity" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
 
     <!-- Additional SEO -->
-    <meta name="format-detection" content="telephone=no">
-    <meta name="geo.region" content="MX">
-    <meta name="geo.placename" content="México">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="geo.region" content="MX" />
+    <meta name="geo.placename" content="México" />
 
     <!-- Preload Critical Assets -->
-    <link rel="preload" href="assets/images/logo.webp" as="image" type="image/webp" fetchpriority="high">
-    <link rel="preload" href="fonts/inter-400.ttf" as="font" type="font/ttf" crossorigin>
-    <link rel="preload" href="fonts/inter-700.ttf" as="font" type="font/ttf" crossorigin>
-    <link rel="preload" href="fonts/fontawesome/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+    <link
+      rel="preload"
+      href="assets/images/logo.webp"
+      as="image"
+      type="image/webp"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      href="fonts/inter-400.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/inter-700.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/fontawesome/webfonts/fa-solid-900.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
 
     <!-- Inter Font - Inline Critical -->
     <style>
-        @font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/inter-400.ttf') format('truetype')}
-        @font-face{font-family:'Inter';font-style:normal;font-weight:700;font-display:swap;src:url('fonts/inter-700.ttf') format('truetype')}
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url("fonts/inter-400.ttf") format("truetype");
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url("fonts/inter-700.ttf") format("truetype");
+      }
     </style>
 
     <!-- Font Awesome Subset - Solo iconos usados (deferred) -->
-    <link rel="stylesheet" href="fonts/fontawesome-subset.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="fonts/fontawesome-subset.css"></noscript>
+    <link
+      rel="stylesheet"
+      href="fonts/fontawesome-subset.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript
+      ><link rel="stylesheet" href="fonts/fontawesome-subset.css"
+    /></noscript>
 
     <!-- Critical CSS Inline - Expanded -->
     <style>
-        /* Critical Above-the-fold CSS */
-        *,::before,::after{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}
-        body{font-family:Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;margin:0;padding:0;-webkit-font-smoothing:antialiased;line-height:1.5}
-        h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;margin:0}
-        p{margin:0}
-        a{color:inherit;text-decoration:none}
-        button{background-color:transparent;background-image:none;padding:0;cursor:pointer}
-        img{display:block;max-width:100%}
-        /* Navbar */
-        #navbar{position:fixed;width:100%;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);box-shadow:0 1px 3px rgba(0,0,0,.1)}
-        /* Hero */
-        .hero-section{padding-top:8rem;padding-bottom:5rem;background:linear-gradient(to bottom right,rgb(239 246 255),rgb(250 245 255),rgb(253 242 248));overflow:hidden}
-        /* Layout */
-        .max-w-7xl{max-width:80rem;margin-left:auto;margin-right:auto}
-        .px-4{padding-left:1rem;padding-right:1rem}
-        .py-4{padding-top:1rem;padding-bottom:1rem}
-        .h-20{height:5rem}
-        .w-12{width:3rem}
-        .h-12{height:3rem}
-        .space-y-8>:not([hidden])~:not([hidden]){margin-top:2rem}
-        .gap-12{gap:3rem}
-        .mb-4{margin-bottom:1rem}
-        .leading-tight{line-height:1.25}
-        .leading-relaxed{line-height:1.625}
-        /* Typography */
-        .text-2xl{font-size:1.5rem;line-height:2rem}
-        .text-5xl{font-size:3rem;line-height:1}
-        .text-6xl{font-size:3.75rem;line-height:1}
-        .text-xl{font-size:1.25rem;line-height:1.75rem}
-        .text-sm{font-size:.875rem;line-height:1.25rem}
-        .text-3xl{font-size:1.875rem;line-height:2.25rem}
-        .font-bold{font-weight:700}
-        .font-semibold{font-weight:600}
-        .font-medium{font-weight:500}
-        /* Colors */
-        .text-gray-900{color:rgb(17 24 39)}
-        .text-gray-700{color:rgb(55 65 81)}
-        .text-gray-600{color:rgb(75 85 99)}
-        .text-white{color:rgb(255 255 255)}
-        .text-primary{color:rgb(102 126 234)}
-        .bg-white{background-color:rgb(255 255 255)}
-        .bg-gradient-to-r{background-image:linear-gradient(to right,var(--tw-gradient-stops))}
-        .from-primary{--tw-gradient-from:rgb(102 126 234);--tw-gradient-to:rgba(102,126,234,0);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}
-        .to-secondary{--tw-gradient-to:rgb(118 75 162)}
-        .bg-clip-text{-webkit-background-clip:text;background-clip:text}
-        .text-transparent{color:transparent}
-        /* Layout utilities */
-        .hidden{display:none!important}
-        .flex{display:flex}
-        .inline-block{display:inline-block}
-        .grid{display:grid}
-        .items-center{align-items:center}
-        .justify-between{justify-content:space-between}
-        .space-x-3>:not([hidden])~:not([hidden]){margin-left:.75rem}
-        .space-x-8>:not([hidden])~:not([hidden]){margin-left:2rem}
-        .rounded-lg{border-radius:.5rem}
-        .rounded-full{border-radius:9999px}
-        .px-6{padding-left:1.5rem;padding-right:1.5rem}
-        .px-8{padding-left:2rem;padding-right:2rem}
-        .py-2{padding-top:.5rem;padding-bottom:.5rem}
-        .py-2\.5{padding-top:.625rem;padding-bottom:.625rem}
-        .pt-32{padding-top:8rem}
-        .pb-20{padding-bottom:5rem}
-        .bg-gradient-to-br{background-image:linear-gradient(to bottom right,var(--tw-gradient-stops))}
-        .from-blue-50{--tw-gradient-from:rgb(239 246 255);--tw-gradient-to:rgba(239,246,255,0);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}
-        .via-purple-50{--tw-gradient-to:rgba(250,245,255,0);--tw-gradient-stops:var(--tw-gradient-from),rgb(250 245 255),var(--tw-gradient-to)}
-        .to-pink-50{--tw-gradient-to:rgb(253 242 248)}
-        .overflow-hidden{overflow:hidden}
-        .lg\:text-6xl{font-size:3.75rem;line-height:1}
-        .shadow-lg{box-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1)}
-        .transition-all{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}
-        .transition-colors{transition-property:color,background-color,border-color;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}
-        .duration-300{transition-duration:.3s}
-        /* Hover states */
-        .hover\:text-primary:hover{color:rgb(102 126 234)}
-        .hover\:shadow-lg:hover{box-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1)}
-        .hover\:-translate-y-0\.5:hover{transform:translateY(-.125rem)}
-        /* Mobile */
-        @media(max-width:768px){.hero-section{padding-top:6rem}.md\:hidden{display:none}}
-        @media(min-width:768px){.md\:flex{display:flex}.lg\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}
-        /* Smooth scrolling */
-        html{scroll-behavior:smooth}
-        /* Spinner */
-        .spinner{border:3px solid rgba(102,126,234,.1);border-top:3px solid #667EEA;border-radius:50%;width:24px;height:24px;animation:spin 1s linear infinite;display:inline-block}
-        @keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+      /* Critical Above-the-fold CSS */
+      *,
+      ::before,
+      ::after {
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+        border-color: #e5e7eb;
+      }
+      body {
+        font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, sans-serif;
+        margin: 0;
+        padding: 0;
+        -webkit-font-smoothing: antialiased;
+        line-height: 1.5;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-size: inherit;
+        font-weight: inherit;
+        margin: 0;
+      }
+      p {
+        margin: 0;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      button {
+        background-color: transparent;
+        background-image: none;
+        padding: 0;
+        cursor: pointer;
+      }
+      img {
+        display: block;
+        max-width: 100%;
+      }
+      /* Navbar */
+      #navbar {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 50;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(12px);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+      /* Hero */
+      .hero-section {
+        padding-top: 8rem;
+        padding-bottom: 5rem;
+        background: linear-gradient(
+          to bottom right,
+          rgb(239 246 255),
+          rgb(250 245 255),
+          rgb(253 242 248)
+        );
+        overflow: hidden;
+      }
+      /* Layout */
+      .max-w-7xl {
+        max-width: 80rem;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .px-4 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      .py-4 {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+      .h-20 {
+        height: 5rem;
+      }
+      .w-12 {
+        width: 3rem;
+      }
+      .h-12 {
+        height: 3rem;
+      }
+      .space-y-8 > :not([hidden]) ~ :not([hidden]) {
+        margin-top: 2rem;
+      }
+      .gap-12 {
+        gap: 3rem;
+      }
+      .mb-4 {
+        margin-bottom: 1rem;
+      }
+      .leading-tight {
+        line-height: 1.25;
+      }
+      .leading-relaxed {
+        line-height: 1.625;
+      }
+      /* Typography */
+      .text-2xl {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+      .text-5xl {
+        font-size: 3rem;
+        line-height: 1;
+      }
+      .text-6xl {
+        font-size: 3.75rem;
+        line-height: 1;
+      }
+      .text-xl {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+      }
+      .text-sm {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+      }
+      .text-3xl {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+      }
+      .font-bold {
+        font-weight: 700;
+      }
+      .font-semibold {
+        font-weight: 600;
+      }
+      .font-medium {
+        font-weight: 500;
+      }
+      /* Colors */
+      .text-gray-900 {
+        color: rgb(17 24 39);
+      }
+      .text-gray-700 {
+        color: rgb(55 65 81);
+      }
+      .text-gray-600 {
+        color: rgb(75 85 99);
+      }
+      .text-white {
+        color: rgb(255 255 255);
+      }
+      .text-primary {
+        color: rgb(102 126 234);
+      }
+      .bg-white {
+        background-color: rgb(255 255 255);
+      }
+      .bg-gradient-to-r {
+        background-image: linear-gradient(to right, var(--tw-gradient-stops));
+      }
+      .from-primary {
+        --tw-gradient-from: rgb(102 126 234);
+        --tw-gradient-to: rgba(102, 126, 234, 0);
+        --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+      }
+      .to-secondary {
+        --tw-gradient-to: rgb(118 75 162);
+      }
+      .bg-clip-text {
+        -webkit-background-clip: text;
+        background-clip: text;
+      }
+      .text-transparent {
+        color: transparent;
+      }
+      /* Layout utilities */
+      .hidden {
+        display: none !important;
+      }
+      .flex {
+        display: flex;
+      }
+      .inline-block {
+        display: inline-block;
+      }
+      .grid {
+        display: grid;
+      }
+      .items-center {
+        align-items: center;
+      }
+      .justify-between {
+        justify-content: space-between;
+      }
+      .space-x-3 > :not([hidden]) ~ :not([hidden]) {
+        margin-left: 0.75rem;
+      }
+      .space-x-8 > :not([hidden]) ~ :not([hidden]) {
+        margin-left: 2rem;
+      }
+      .rounded-lg {
+        border-radius: 0.5rem;
+      }
+      .rounded-full {
+        border-radius: 9999px;
+      }
+      .px-6 {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+      .px-8 {
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+      .py-2 {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+      .py-2\.5 {
+        padding-top: 0.625rem;
+        padding-bottom: 0.625rem;
+      }
+      .pt-32 {
+        padding-top: 8rem;
+      }
+      .pb-20 {
+        padding-bottom: 5rem;
+      }
+      .bg-gradient-to-br {
+        background-image: linear-gradient(
+          to bottom right,
+          var(--tw-gradient-stops)
+        );
+      }
+      .from-blue-50 {
+        --tw-gradient-from: rgb(239 246 255);
+        --tw-gradient-to: rgba(239, 246, 255, 0);
+        --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+      }
+      .via-purple-50 {
+        --tw-gradient-to: rgba(250, 245, 255, 0);
+        --tw-gradient-stops: var(--tw-gradient-from), rgb(250 245 255),
+          var(--tw-gradient-to);
+      }
+      .to-pink-50 {
+        --tw-gradient-to: rgb(253 242 248);
+      }
+      .overflow-hidden {
+        overflow: hidden;
+      }
+      .lg\:text-6xl {
+        font-size: 3.75rem;
+        line-height: 1;
+      }
+      .shadow-lg {
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0 4px 6px -4px rgba(0, 0, 0, 0.1);
+      }
+      .transition-all {
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 0.15s;
+      }
+      .transition-colors {
+        transition-property: color, background-color, border-color;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 0.15s;
+      }
+      .duration-300 {
+        transition-duration: 0.3s;
+      }
+      /* Hover states */
+      .hover\:text-primary:hover {
+        color: rgb(102 126 234);
+      }
+      .hover\:shadow-lg:hover {
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0 4px 6px -4px rgba(0, 0, 0, 0.1);
+      }
+      .hover\:-translate-y-0\.5:hover {
+        transform: translateY(-0.125rem);
+      }
+      /* Mobile */
+      @media (max-width: 768px) {
+        .hero-section {
+          padding-top: 6rem;
+        }
+        .md\:hidden {
+          display: none;
+        }
+      }
+      @media (min-width: 768px) {
+        .md\:flex {
+          display: flex;
+        }
+        .lg\:grid-cols-2 {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+      /* Smooth scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+      /* Spinner */
+      .spinner {
+        border: 3px solid rgba(102, 126, 234, 0.1);
+        border-top: 3px solid #667eea;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        animation: spin 1s linear infinite;
+        display: inline-block;
+      }
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      /* Page Loader */
+      #page-loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        transition: opacity 0.5s ease, visibility 0.5s ease;
+      }
+      #page-loader.loaded {
+        opacity: 0;
+        visibility: hidden;
+      }
+      .loader-spinner {
+        width: 60px;
+        height: 60px;
+        border: 4px solid rgba(255, 255, 255, 0.2);
+        border-top: 4px solid #fff;
+        border-radius: 50%;
+        animation: spin 0.8s linear infinite;
+      }
+      .loader-text {
+        color: #fff;
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-top: 1.5rem;
+        animation: pulse 1.5s ease-in-out infinite;
+      }
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.6;
+        }
+      }
     </style>
 
     <!-- Tailwind CSS - Local optimizado (deferred) -->
-    <link rel="stylesheet" href="tailwind-generated.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="tailwind-generated.css"></noscript>
+    <link
+      rel="stylesheet"
+      href="tailwind-generated.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript><link rel="stylesheet" href="tailwind-generated.css" /></noscript>
 
     <!-- Custom CSS - Minified (deferred) -->
-    <link rel="stylesheet" href="styles.min.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="styles.min.css"></noscript>
-</head>
-<body class="font-sans antialiased">
+    <link
+      rel="stylesheet"
+      href="styles.min.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript><link rel="stylesheet" href="styles.min.css" /></noscript>
+  </head>
+  <body class="font-sans antialiased">
+    <!-- Page Loader -->
+    <div id="page-loader">
+      <div class="loader-spinner"></div>
+      <div class="loader-text">Cargando Vecinity...</div>
+    </div>
 
     <!-- Navigation -->
-    <nav class="fixed w-full bg-white/95 backdrop-blur-md shadow-sm z-50 transition-all duration-300" id="navbar">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
-                <!-- Logo -->
-                <div class="flex items-center">
-                    <a href="#inicio" class="flex items-center space-x-3">
-                        <picture>
-                            <source type="image/webp" media="(max-width: 768px)" srcset="assets/images/logo-96.webp" width="48" height="48">
-                            <source media="(max-width: 768px)" srcset="assets/images/logo-96.png" width="48" height="48">
-                            <source type="image/webp" srcset="assets/images/logo.webp" width="48" height="48">
-                            <img src="assets/images/logo.png" alt="Vecinity Logo" class="w-12 h-12" width="48" height="48" loading="eager" fetchpriority="high">
-                        </picture>
-                        <span class="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Vecinity</span>
-                    </a>
-                </div>
+    <nav
+      class="fixed w-full bg-white/95 backdrop-blur-md shadow-sm z-50 transition-all duration-300"
+      id="navbar"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <!-- Logo -->
+          <div class="flex items-center">
+            <a href="#inicio" class="flex items-center space-x-3">
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(max-width: 768px)"
+                  srcset="assets/images/logo-96.webp"
+                  width="48"
+                  height="48"
+                />
+                <source
+                  media="(max-width: 768px)"
+                  srcset="assets/images/logo-96.png"
+                  width="48"
+                  height="48"
+                />
+                <source
+                  type="image/webp"
+                  srcset="assets/images/logo.webp"
+                  width="48"
+                  height="48"
+                />
+                <img
+                  src="assets/images/logo.png"
+                  alt="Vecinity Logo"
+                  class="w-12 h-12"
+                  width="48"
+                  height="48"
+                  loading="eager"
+                  fetchpriority="high"
+                />
+              </picture>
+              <span
+                class="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"
+                >Vecinity</span
+              >
+            </a>
+          </div>
 
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#inicio" class="text-gray-700 hover:text-primary transition-colors font-medium">Inicio</a>
-                    <a href="#caracteristicas" class="text-gray-700 hover:text-primary transition-colors font-medium">Características</a>
-                    <a href="#beneficios" class="text-gray-700 hover:text-primary transition-colors font-medium">Beneficios</a>
-                    <a href="#planes" class="text-gray-700 hover:text-primary transition-colors font-medium">Planes</a>
-                    <a href="#contacto" class="text-gray-700 hover:text-primary transition-colors font-medium">Contacto</a>
-                    <a href="#contacto" class="bg-gradient-to-r from-primary to-secondary text-white px-6 py-2.5 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5">
-                        Solicita Demo
-                    </a>
-                </div>
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex items-center space-x-8">
+            <a
+              href="#inicio"
+              class="text-gray-700 hover:text-primary transition-colors font-medium"
+              >Inicio</a
+            >
+            <a
+              href="#caracteristicas"
+              class="text-gray-700 hover:text-primary transition-colors font-medium"
+              >Características</a
+            >
+            <a
+              href="#beneficios"
+              class="text-gray-700 hover:text-primary transition-colors font-medium"
+              >Beneficios</a
+            >
+            <a
+              href="#planes"
+              class="text-gray-700 hover:text-primary transition-colors font-medium"
+              >Planes</a
+            >
+            <a
+              href="#contacto"
+              class="text-gray-700 hover:text-primary transition-colors font-medium"
+              >Contacto</a
+            >
+            <a
+              href="#contacto"
+              class="bg-gradient-to-r from-primary to-secondary text-white px-6 py-2.5 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5"
+            >
+              Solicita Demo
+            </a>
+          </div>
 
-                <!-- Mobile Menu Button -->
-                <button class="md:hidden text-gray-700" id="mobile-menu-button" aria-label="Abrir menú de navegación" aria-expanded="false">
-                    <i class="fas fa-bars text-2xl"></i>
-                </button>
-            </div>
+          <!-- Mobile Menu Button -->
+          <button
+            class="md:hidden text-gray-700"
+            id="mobile-menu-button"
+            aria-label="Abrir menú de navegación"
+            aria-expanded="false"
+          >
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
         </div>
+      </div>
 
-        <!-- Mobile Menu -->
-        <div class="hidden md:hidden bg-white border-t" id="mobile-menu">
-            <div class="px-4 py-4 space-y-3">
-                <a href="#inicio" class="block text-gray-700 hover:text-primary transition-colors font-medium py-2">Inicio</a>
-                <a href="#caracteristicas" class="block text-gray-700 hover:text-primary transition-colors font-medium py-2">Características</a>
-                <a href="#beneficios" class="block text-gray-700 hover:text-primary transition-colors font-medium py-2">Beneficios</a>
-                <a href="#planes" class="block text-gray-700 hover:text-primary transition-colors font-medium py-2">Planes</a>
-                <a href="#contacto" class="block text-gray-700 hover:text-primary transition-colors font-medium py-2">Contacto</a>
-                <a href="#contacto" class="block bg-gradient-to-r from-primary to-secondary text-white px-6 py-3 rounded-lg font-semibold text-center">
-                    Solicita Demo
-                </a>
-            </div>
+      <!-- Mobile Menu -->
+      <div class="hidden md:hidden bg-white border-t" id="mobile-menu">
+        <div class="px-4 py-4 space-y-3">
+          <a
+            href="#inicio"
+            class="block text-gray-700 hover:text-primary transition-colors font-medium py-2"
+            >Inicio</a
+          >
+          <a
+            href="#caracteristicas"
+            class="block text-gray-700 hover:text-primary transition-colors font-medium py-2"
+            >Características</a
+          >
+          <a
+            href="#beneficios"
+            class="block text-gray-700 hover:text-primary transition-colors font-medium py-2"
+            >Beneficios</a
+          >
+          <a
+            href="#planes"
+            class="block text-gray-700 hover:text-primary transition-colors font-medium py-2"
+            >Planes</a
+          >
+          <a
+            href="#contacto"
+            class="block text-gray-700 hover:text-primary transition-colors font-medium py-2"
+            >Contacto</a
+          >
+          <a
+            href="#contacto"
+            class="block bg-gradient-to-r from-primary to-secondary text-white px-6 py-3 rounded-lg font-semibold text-center"
+          >
+            Solicita Demo
+          </a>
         </div>
+      </div>
     </nav>
 
     <main>
-    <!-- Hero Section -->
-    <section id="inicio" class="hero-section pt-32 pb-20 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 overflow-hidden">
+      <!-- Hero Section -->
+      <section
+        id="inicio"
+        class="hero-section pt-32 pb-20 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 overflow-hidden"
+      >
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <!-- Left Content -->
-                <div class="space-y-8">
-                    <div class="inline-block">
-                        <span class="bg-gradient-to-r from-primary to-secondary text-white px-4 py-2 rounded-full text-sm font-semibold">
-                            🚀 La solución #1 para comunidades
-                        </span>
-                    </div>
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <!-- Left Content -->
+            <div class="space-y-8">
+              <div class="inline-block">
+                <span
+                  class="bg-gradient-to-r from-primary to-secondary text-white px-4 py-2 rounded-full text-sm font-semibold"
+                >
+                  🚀 La solución #1 para comunidades
+                </span>
+              </div>
 
-                    <h1 class="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                        Gestiona tu comunidad de forma
-                        <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"> inteligente</span>
-                    </h1>
+              <h1
+                class="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight"
+              >
+                Gestiona tu comunidad de forma
+                <span
+                  class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"
+                >
+                  inteligente</span
+                >
+              </h1>
 
-                    <p class="text-xl text-gray-600 leading-relaxed">
-                        Vecinity simplifica la administración de condominios, fraccionamientos y vecindarios con herramientas modernas para finanzas, comunicación y gestión comunitaria.
-                    </p>
+              <p class="text-xl text-gray-600 leading-relaxed">
+                Vecinity simplifica la administración de condominios,
+                fraccionamientos y vecindarios con herramientas modernas para
+                finanzas, comunicación y gestión comunitaria.
+              </p>
 
-                    <!-- CTA Buttons -->
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="#contacto" class="bg-gradient-to-r from-primary to-secondary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center">
-                            <i class="fas fa-rocket mr-2"></i>
-                            Empieza Gratis
-                        </a>
-                        <a href="#caracteristicas" class="bg-white text-primary border-2 border-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-primary hover:text-white transition-all duration-300 text-center">
-                            <i class="fas fa-play-circle mr-2"></i>
-                            Ver Demo
-                        </a>
-                    </div>
-
-                    <!-- Stats -->
-                    <div class="grid grid-cols-3 gap-6 pt-8">
-                        <div class="text-center">
-                            <div class="text-3xl font-bold text-primary">500+</div>
-                            <div class="text-sm text-gray-600 mt-1">Comunidades</div>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-3xl font-bold text-primary">10k+</div>
-                            <div class="text-sm text-gray-600 mt-1">Vecinos Activos</div>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-3xl font-bold text-primary">95%</div>
-                            <div class="text-sm text-gray-600 mt-1">Satisfacción</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Content - Mockup -->
-                <div class="relative">
-                    <div class="relative z-10 transform hover:scale-105 transition-transform duration-500">
-                        <div class="bg-white rounded-2xl shadow-2xl p-8">
-                            <div class="space-y-4">
-                                <div class="flex items-center space-x-3">
-                                    <div class="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center">
-                                        <i class="fas fa-chart-line text-white"></i>
-                                    </div>
-                                    <div>
-                                        <div class="font-semibold text-gray-900">Dashboard Inteligente</div>
-                                        <div class="text-sm text-gray-500">Métricas en tiempo real</div>
-                                    </div>
-                                </div>
-                                <div class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-4">
-                                    <div class="flex justify-between items-center mb-2">
-                                        <span class="text-sm text-gray-600">Recaudación mensual</span>
-                                        <span class="text-sm font-semibold text-success">+12%</span>
-                                    </div>
-                                    <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
-                                        <div class="h-full bg-gradient-to-r from-success to-green-400 w-4/5"></div>
-                                    </div>
-                                </div>
-                                <div class="grid grid-cols-2 gap-4">
-                                    <div class="bg-blue-50 rounded-lg p-4">
-                                        <div class="text-2xl font-bold text-primary">$45,000</div>
-                                        <div class="text-xs text-gray-600">Recaudado</div>
-                                    </div>
-                                    <div class="bg-green-50 rounded-lg p-4">
-                                        <div class="text-2xl font-bold text-success">89%</div>
-                                        <div class="text-xs text-gray-600">Pagos al día</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Decorative Elements -->
-                    <div class="absolute -top-10 -right-10 w-72 h-72 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-full blur-3xl"></div>
-                    <div class="absolute -bottom-10 -left-10 w-72 h-72 bg-gradient-to-r from-purple-300/20 to-pink-300/20 rounded-full blur-3xl"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Problem/Solution Section -->
-    <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">
-                    ¿Cansado de la administración <span class="text-primary">desorganizada?</span>
-                </h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Sabemos que gestionar una comunidad puede ser complicado. Vecinity transforma el caos en orden.
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <!-- Problems -->
-                <div class="space-y-6">
-                    <h3 class="text-2xl font-bold text-gray-900 mb-6">❌ Problemas Comunes:</h3>
-                    <div class="space-y-4">
-                        <div class="flex items-start space-x-4 p-4 bg-red-50 rounded-lg">
-                            <i class="fas fa-times-circle text-red-500 text-xl mt-1"></i>
-                            <div>
-                                <h4 class="font-semibold text-gray-900">Control financiero difuso</h4>
-                                <p class="text-gray-600 text-sm">Hojas de cálculo desactualizadas y falta de transparencia</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start space-x-4 p-4 bg-red-50 rounded-lg">
-                            <i class="fas fa-times-circle text-red-500 text-xl mt-1"></i>
-                            <div>
-                                <h4 class="font-semibold text-gray-900">Comunicación desorganizada</h4>
-                                <p class="text-gray-600 text-sm">Grupos de WhatsApp saturados y mensajes importantes perdidos</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start space-x-4 p-4 bg-red-50 rounded-lg">
-                            <i class="fas fa-times-circle text-red-500 text-xl mt-1"></i>
-                            <div>
-                                <h4 class="font-semibold text-gray-900">Administración manual</h4>
-                                <p class="text-gray-600 text-sm">Tiempo valioso perdido en tareas administrativas repetitivas</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Solutions -->
-                <div class="space-y-6">
-                    <h3 class="text-2xl font-bold text-gray-900 mb-6">✅ Con Vecinity:</h3>
-                    <div class="space-y-4">
-                        <div class="flex items-start space-x-4 p-4 bg-green-50 rounded-lg">
-                            <i class="fas fa-check-circle text-success text-xl mt-1"></i>
-                            <div>
-                                <h4 class="font-semibold text-gray-900">Finanzas transparentes</h4>
-                                <p class="text-gray-600 text-sm">Dashboard en tiempo real con reportes automáticos y control total</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start space-x-4 p-4 bg-green-50 rounded-lg">
-                            <i class="fas fa-check-circle text-success text-xl mt-1"></i>
-                            <div>
-                                <h4 class="font-semibold text-gray-900">Feed social organizado</h4>
-                                <p class="text-gray-600 text-sm">Publicaciones, anuncios y votaciones en una sola plataforma</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start space-x-4 p-4 bg-green-50 rounded-lg">
-                            <i class="fas fa-check-circle text-success text-xl mt-1"></i>
-                            <div>
-                                <h4 class="font-semibold text-gray-900">Automatización inteligente</h4>
-                                <p class="text-gray-600 text-sm">Ahorra hasta 10 horas semanales con procesos automatizados</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section id="caracteristicas" class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">
-                    Todo lo que necesitas en <span class="text-primary">una sola plataforma</span>
-                </h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Herramientas poderosas diseñadas específicamente para la gestión comunitaria moderna
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Feature 1 -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                    <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-6">
-                        <i class="fas fa-wallet text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Gestión Financiera</h3>
-                    <p class="text-gray-600 mb-4">Control total de mensualidades, gastos comunes y reportes financieros en tiempo real con transparencia absoluta.</p>
-                    <ul class="space-y-2 text-sm text-gray-600">
-                        <li class="flex items-center"><i class="fas fa-check text-success mr-2"></i> Control de pagos</li>
-                        <li class="flex items-center"><i class="fas fa-check text-success mr-2"></i> Gastos comunitarios</li>
-                        <li class="flex items-center"><i class="fas fa-check text-success mr-2"></i> Reportes automáticos</li>
-                    </ul>
-                </div>
-
-                <!-- Feature 2 -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                    <div class="w-16 h-16 bg-gradient-to-r from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mb-6">
-                        <i class="fas fa-users text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Feed Vecinal</h3>
-                    <p class="text-gray-600 mb-4">Red social privada para tu comunidad. Comparte anuncios, eventos y mantén a todos informados.</p>
-                    <ul class="space-y-2 text-sm text-gray-600">
-                        <li class="flex items-center"><i class="fas fa-check text-success mr-2"></i> Publicaciones y anuncios</li>
-                        <li class="flex items-center"><i class="fas fa-check text-success mr-2"></i> Eventos comunitarios</li>
-                        <li class="flex items-center"><i class="fas fa-check text-success mr-2"></i> Notificaciones push</li>
-                    </ul>
-                </div>
-
-                <!-- Feature 3 -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                    <div class="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-xl flex items-center justify-center mb-6">
-                        <i class="fas fa-calendar-check text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Reservaciones</h3>
-                    <p class="text-gray-600 mb-4">Sistema inteligente para reservar áreas comunes como salón de fiestas, gym, alberca y más.</p>
-                    <ul class="space-y-2 text-sm text-gray-600">
-                        <li class="flex items-center"><i class="fas fa-check text-success mr-2"></i> Calendario compartido</li>
-                        <li class="flex items-center"><i class="fas fa-check text-success mr-2"></i> Gestión de amenidades</li>
-                        <li class="flex items-center"><i class="fas fa-check text-success mr-2"></i> Sin conflictos de horario</li>
-                    </ul>
-                </div>
-
-                <!-- Feature 4 -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                    <div class="w-16 h-16 bg-gradient-to-r from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-6">
-                        <i class="fas fa-chart-pie text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Dashboard Analytics</h3>
-                    <p class="text-gray-600 mb-4">Métricas y estadísticas en tiempo real para tomar decisiones informadas sobre tu comunidad.</p>
-                    <ul class="space-y-2 text-sm text-gray-600">
-                        <li class="flex items-center"><i class="fas fa-check text-success mr-2"></i> KPIs en tiempo real</li>
-                        <li class="flex items-center"><i class="fas fa-check text-success mr-2"></i> Gráficas interactivas</li>
-                        <li class="flex items-center"><i class="fas fa-check text-success mr-2"></i> Actividad semanal</li>
-                    </ul>
-                </div>
-
-                <!-- Feature 5 -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                    <div class="w-16 h-16 bg-gradient-to-r from-pink-500 to-pink-600 rounded-xl flex items-center justify-center mb-6">
-                        <i class="fas fa-poll text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Encuestas y Votaciones</h3>
-                    <p class="text-gray-600 mb-4">Toma decisiones democráticas con encuestas digitales y votaciones en tiempo real.</p>
-                    <ul class="space-y-2 text-sm text-gray-600">
-                        <li class="flex items-center"><i class="fas fa-check text-success mr-2"></i> Votaciones anónimas</li>
-                        <li class="flex items-center"><i class="fas fa-check text-success mr-2"></i> Resultados instantáneos</li>
-                        <li class="flex items-center"><i class="fas fa-check text-success mr-2"></i> Participación mejorada</li>
-                    </ul>
-                </div>
-
-                <!-- Feature 6 -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                    <div class="w-16 h-16 bg-gradient-to-r from-indigo-500 to-indigo-600 rounded-xl flex items-center justify-center mb-6">
-                        <i class="fas fa-home text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Gestión de Casas</h3>
-                    <p class="text-gray-600 mb-4">Administra casas, departamentos y miembros con sistema de códigos de invitación únicos.</p>
-                    <ul class="space-y-2 text-sm text-gray-600">
-                        <li class="flex items-center"><i class="fas fa-check text-success mr-2"></i> Directorio de vecinos</li>
-                        <li class="flex items-center"><i class="fas fa-check text-success mr-2"></i> Roles y permisos</li>
-                        <li class="flex items-center"><i class="fas fa-check text-success mr-2"></i> Códigos de invitación</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Benefits by User Type -->
-    <section id="beneficios" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">
-                    Beneficios para <span class="text-primary">todos</span>
-                </h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Vecinity está diseñado para mejorar la experiencia de cada miembro de tu comunidad
-                </p>
-            </div>
-
-            <div class="grid lg:grid-cols-3 gap-8">
-                <!-- For Admins -->
-                <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 border-2 border-blue-200">
-                    <div class="text-center mb-6">
-                        <div class="w-20 h-20 bg-gradient-to-r from-primary to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-shield-alt text-white text-3xl"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold text-gray-900">Para Administradores</h3>
-                    </div>
-                    <ul class="space-y-4">
-                        <li class="flex items-start">
-                            <i class="fas fa-star text-warning text-xl mr-3 mt-1"></i>
-                            <span class="text-gray-700">Ahorra hasta <strong>10 horas semanales</strong> en tareas administrativas</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-star text-warning text-xl mr-3 mt-1"></i>
-                            <span class="text-gray-700">Aumenta la <strong>transparencia financiera</strong> y reduce quejas</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-star text-warning text-xl mr-3 mt-1"></i>
-                            <span class="text-gray-700">Mejora la <strong>recaudación</strong> hasta un 25%</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-star text-warning text-xl mr-3 mt-1"></i>
-                            <span class="text-gray-700">Reportes automáticos para <strong>asambleas</strong></span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- For Residents -->
-                <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-8 border-2 border-green-200">
-                    <div class="text-center mb-6">
-                        <div class="w-20 h-20 bg-gradient-to-r from-success to-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-user-friends text-white text-3xl"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold text-gray-900">Para Vecinos</h3>
-                    </div>
-                    <ul class="space-y-4">
-                        <li class="flex items-start">
-                            <i class="fas fa-star text-warning text-xl mr-3 mt-1"></i>
-                            <span class="text-gray-700">Mantente <strong>siempre informado</strong> de eventos y noticias</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-star text-warning text-xl mr-3 mt-1"></i>
-                            <span class="text-gray-700">Consulta tus <strong>pagos y gastos</strong> desde tu celular</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-star text-warning text-xl mr-3 mt-1"></i>
-                            <span class="text-gray-700">Reserva áreas comunes <strong>sin llamadas</strong> ni filas</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-star text-warning text-xl mr-3 mt-1"></i>
-                            <span class="text-gray-700">Participa en <strong>decisiones comunitarias</strong> fácilmente</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- For Communities -->
-                <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-8 border-2 border-purple-200">
-                    <div class="text-center mb-6">
-                        <div class="w-20 h-20 bg-gradient-to-r from-secondary to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-building text-white text-3xl"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold text-gray-900">Para tu Comunidad</h3>
-                    </div>
-                    <ul class="space-y-4">
-                        <li class="flex items-start">
-                            <i class="fas fa-star text-warning text-xl mr-3 mt-1"></i>
-                            <span class="text-gray-700">Incrementa la <strong>convivencia</strong> entre vecinos</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-star text-warning text-xl mr-3 mt-1"></i>
-                            <span class="text-gray-700">Reduce <strong>conflictos</strong> con mejor comunicación</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-star text-warning text-xl mr-3 mt-1"></i>
-                            <span class="text-gray-700">Aumenta el <strong>valor</strong> de las propiedades</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-star text-warning text-xl mr-3 mt-1"></i>
-                            <span class="text-gray-700">Construye una comunidad más <strong>unida</strong></span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- How It Works -->
-    <section class="py-20 bg-gradient-to-br from-gray-50 to-purple-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">
-                    Comienza en <span class="text-primary">3 simples pasos</span>
-                </h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Implementar Vecinity en tu comunidad es rápido y sencillo
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Step 1 -->
-                <div class="relative">
-                    <div class="bg-white rounded-2xl p-8 shadow-lg text-center h-full">
-                        <div class="w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">
-                            1
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-4">Regístrate</h3>
-                        <p class="text-gray-600">Crea tu comunidad en menos de 5 minutos. Solo necesitas información básica de tu fraccionamiento o condominio.</p>
-                    </div>
-                    <div class="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2">
-                        <i class="fas fa-arrow-right text-primary text-3xl"></i>
-                    </div>
-                </div>
-
-                <!-- Step 2 -->
-                <div class="relative">
-                    <div class="bg-white rounded-2xl p-8 shadow-lg text-center h-full">
-                        <div class="w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">
-                            2
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-4">Invita a tus vecinos</h3>
-                        <p class="text-gray-600">Genera códigos de invitación únicos y compártelos. Tus vecinos se unen en segundos desde cualquier dispositivo.</p>
-                    </div>
-                    <div class="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2">
-                        <i class="fas fa-arrow-right text-primary text-3xl"></i>
-                    </div>
-                </div>
-
-                <!-- Step 3 -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg text-center h-full">
-                    <div class="w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">
-                        3
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">¡Listo para gestionar!</h3>
-                    <p class="text-gray-600">Empieza a administrar finanzas, publicar anuncios, crear eventos y mucho más desde tu dashboard.</p>
-                </div>
-            </div>
-
-            <div class="text-center mt-12">
-                <a href="#contacto" class="inline-block bg-gradient-to-r from-primary to-secondary text-white px-10 py-4 rounded-lg font-semibold text-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                    <i class="fas fa-rocket mr-2"></i>
-                    Comenzar Ahora
+              <!-- CTA Buttons -->
+              <div class="flex flex-col sm:flex-row gap-4">
+                <a
+                  href="#contacto"
+                  class="bg-gradient-to-r from-primary to-secondary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center"
+                >
+                  <i class="fas fa-rocket mr-2"></i>
+                  Empieza Gratis
                 </a>
+                <a
+                  href="#caracteristicas"
+                  class="bg-white text-primary border-2 border-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-primary hover:text-white transition-all duration-300 text-center"
+                >
+                  <i class="fas fa-play-circle mr-2"></i>
+                  Ver Demo
+                </a>
+              </div>
+
+              <!-- Stats -->
+              <div class="grid grid-cols-3 gap-6 pt-8">
+                <div class="text-center">
+                  <div class="text-3xl font-bold text-primary">500+</div>
+                  <div class="text-sm text-gray-600 mt-1">Comunidades</div>
+                </div>
+                <div class="text-center">
+                  <div class="text-3xl font-bold text-primary">10k+</div>
+                  <div class="text-sm text-gray-600 mt-1">Vecinos Activos</div>
+                </div>
+                <div class="text-center">
+                  <div class="text-3xl font-bold text-primary">95%</div>
+                  <div class="text-sm text-gray-600 mt-1">Satisfacción</div>
+                </div>
+              </div>
             </div>
+
+            <!-- Right Content - Mockup -->
+            <div class="relative">
+              <div
+                class="relative z-10 transform hover:scale-105 transition-transform duration-500"
+              >
+                <div class="bg-white rounded-2xl shadow-2xl p-8">
+                  <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                      <div
+                        class="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center"
+                      >
+                        <i class="fas fa-chart-line text-white"></i>
+                      </div>
+                      <div>
+                        <div class="font-semibold text-gray-900">
+                          Dashboard Inteligente
+                        </div>
+                        <div class="text-sm text-gray-500">
+                          Métricas en tiempo real
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-4"
+                    >
+                      <div class="flex justify-between items-center mb-2">
+                        <span class="text-sm text-gray-600"
+                          >Recaudación mensual</span
+                        >
+                        <span class="text-sm font-semibold text-success"
+                          >+12%</span
+                        >
+                      </div>
+                      <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+                        <div
+                          class="h-full bg-gradient-to-r from-success to-green-400 w-4/5"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                      <div class="bg-blue-50 rounded-lg p-4">
+                        <div class="text-2xl font-bold text-primary">
+                          $45,000
+                        </div>
+                        <div class="text-xs text-gray-600">Recaudado</div>
+                      </div>
+                      <div class="bg-green-50 rounded-lg p-4">
+                        <div class="text-2xl font-bold text-success">89%</div>
+                        <div class="text-xs text-gray-600">Pagos al día</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Decorative Elements -->
+              <div
+                class="absolute -top-10 -right-10 w-72 h-72 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-full blur-3xl"
+              ></div>
+              <div
+                class="absolute -bottom-10 -left-10 w-72 h-72 bg-gradient-to-r from-purple-300/20 to-pink-300/20 rounded-full blur-3xl"
+              ></div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Pricing Section -->
-    <section id="planes" class="py-20 bg-white">
+      <!-- Problem/Solution Section -->
+      <section class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">
-                    Planes que se adaptan a tu <span class="text-primary">comunidad</span>
-                </h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Precios transparentes y justos. Sin costos ocultos.
-                </p>
+          <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">
+              ¿Cansado de la administración
+              <span class="text-primary">desorganizada?</span>
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+              Sabemos que gestionar una comunidad puede ser complicado. Vecinity
+              transforma el caos en orden.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <!-- Problems -->
+            <div class="space-y-6">
+              <h3 class="text-2xl font-bold text-gray-900 mb-6">
+                ❌ Problemas Comunes:
+              </h3>
+              <div class="space-y-4">
+                <div
+                  class="flex items-start space-x-4 p-4 bg-red-50 rounded-lg"
+                >
+                  <i class="fas fa-times-circle text-red-500 text-xl mt-1"></i>
+                  <div>
+                    <h4 class="font-semibold text-gray-900">
+                      Control financiero difuso
+                    </h4>
+                    <p class="text-gray-600 text-sm">
+                      Hojas de cálculo desactualizadas y falta de transparencia
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="flex items-start space-x-4 p-4 bg-red-50 rounded-lg"
+                >
+                  <i class="fas fa-times-circle text-red-500 text-xl mt-1"></i>
+                  <div>
+                    <h4 class="font-semibold text-gray-900">
+                      Comunicación desorganizada
+                    </h4>
+                    <p class="text-gray-600 text-sm">
+                      Grupos de WhatsApp saturados y mensajes importantes
+                      perdidos
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="flex items-start space-x-4 p-4 bg-red-50 rounded-lg"
+                >
+                  <i class="fas fa-times-circle text-red-500 text-xl mt-1"></i>
+                  <div>
+                    <h4 class="font-semibold text-gray-900">
+                      Administración manual
+                    </h4>
+                    <p class="text-gray-600 text-sm">
+                      Tiempo valioso perdido en tareas administrativas
+                      repetitivas
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Basic Plan -->
-                <div class="bg-white rounded-2xl p-8 border-2 border-gray-200 hover:border-primary transition-all duration-300 hover:shadow-xl">
-                    <div class="text-center mb-6">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Básico</h3>
-                        <p class="text-gray-600">Ideal para comunidades pequeñas</p>
-                    </div>
-                    <div class="text-center mb-8">
-                        <div class="text-5xl font-bold text-gray-900 mb-2">$499<span class="text-2xl text-gray-600">/mes</span></div>
-                        <p class="text-sm text-gray-600">Hasta 50 casas</p>
-                    </div>
-                    <ul class="space-y-4 mb-8">
-                        <li class="flex items-center"><i class="fas fa-check text-success mr-3"></i> Dashboard básico</li>
-                        <li class="flex items-center"><i class="fas fa-check text-success mr-3"></i> Gestión de pagos</li>
-                        <li class="flex items-center"><i class="fas fa-check text-success mr-3"></i> Feed comunitario</li>
-                        <li class="flex items-center"><i class="fas fa-check text-success mr-3"></i> Calendario de eventos</li>
-                        <li class="flex items-center"><i class="fas fa-check text-success mr-3"></i> Soporte por email</li>
-                    </ul>
-                    <a href="#contacto" class="block text-center bg-gray-100 text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-200 transition-all duration-300">
-                        Empezar Prueba Gratis
-                    </a>
+            <!-- Solutions -->
+            <div class="space-y-6">
+              <h3 class="text-2xl font-bold text-gray-900 mb-6">
+                ✅ Con Vecinity:
+              </h3>
+              <div class="space-y-4">
+                <div
+                  class="flex items-start space-x-4 p-4 bg-green-50 rounded-lg"
+                >
+                  <i class="fas fa-check-circle text-success text-xl mt-1"></i>
+                  <div>
+                    <h4 class="font-semibold text-gray-900">
+                      Finanzas transparentes
+                    </h4>
+                    <p class="text-gray-600 text-sm">
+                      Dashboard en tiempo real con reportes automáticos y
+                      control total
+                    </p>
+                  </div>
                 </div>
+                <div
+                  class="flex items-start space-x-4 p-4 bg-green-50 rounded-lg"
+                >
+                  <i class="fas fa-check-circle text-success text-xl mt-1"></i>
+                  <div>
+                    <h4 class="font-semibold text-gray-900">
+                      Feed social organizado
+                    </h4>
+                    <p class="text-gray-600 text-sm">
+                      Publicaciones, anuncios y votaciones en una sola
+                      plataforma
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="flex items-start space-x-4 p-4 bg-green-50 rounded-lg"
+                >
+                  <i class="fas fa-check-circle text-success text-xl mt-1"></i>
+                  <div>
+                    <h4 class="font-semibold text-gray-900">
+                      Automatización inteligente
+                    </h4>
+                    <p class="text-gray-600 text-sm">
+                      Ahorra hasta 10 horas semanales con procesos automatizados
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                <!-- Professional Plan -->
-                <div class="bg-gradient-to-br from-primary to-secondary rounded-2xl p-8 text-white relative transform scale-105 shadow-2xl">
-                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                        <span class="bg-warning text-white px-4 py-1 rounded-full text-sm font-semibold">
-                            MÁS POPULAR
-                        </span>
-                    </div>
-                    <div class="text-center mb-6">
-                        <h3 class="text-2xl font-bold mb-2">Profesional</h3>
-                        <p class="text-blue-100">Para comunidades medianas</p>
-                    </div>
-                    <div class="text-center mb-8">
-                        <div class="text-5xl font-bold mb-2">$999<span class="text-2xl text-blue-100">/mes</span></div>
-                        <p class="text-sm text-blue-100">Hasta 150 casas</p>
-                    </div>
-                    <ul class="space-y-4 mb-8">
-                        <li class="flex items-center"><i class="fas fa-check mr-3"></i> Todo en Básico +</li>
-                        <li class="flex items-center"><i class="fas fa-check mr-3"></i> Dashboard avanzado</li>
-                        <li class="flex items-center"><i class="fas fa-check mr-3"></i> Reportes financieros</li>
-                        <li class="flex items-center"><i class="fas fa-check mr-3"></i> Encuestas y votaciones</li>
-                        <li class="flex items-center"><i class="fas fa-check mr-3"></i> Reservación de áreas</li>
-                        <li class="flex items-center"><i class="fas fa-check mr-3"></i> Soporte prioritario</li>
-                    </ul>
-                    <a href="#contacto" class="block text-center bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300">
-                        Empezar Prueba Gratis
-                    </a>
-                </div>
+      <!-- Features Section -->
+      <section
+        id="caracteristicas"
+        class="py-20 bg-gradient-to-br from-gray-50 to-blue-50"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">
+              Todo lo que necesitas en
+              <span class="text-primary">una sola plataforma</span>
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+              Herramientas poderosas diseñadas específicamente para la gestión
+              comunitaria moderna
+            </p>
+          </div>
 
-                <!-- Enterprise Plan -->
-                <div class="bg-white rounded-2xl p-8 border-2 border-gray-200 hover:border-primary transition-all duration-300 hover:shadow-xl">
-                    <div class="text-center mb-6">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Enterprise</h3>
-                        <p class="text-gray-600">Para grandes comunidades</p>
-                    </div>
-                    <div class="text-center mb-8">
-                        <div class="text-5xl font-bold text-gray-900 mb-2">Custom</div>
-                        <p class="text-sm text-gray-600">Casas ilimitadas</p>
-                    </div>
-                    <ul class="space-y-4 mb-8">
-                        <li class="flex items-center"><i class="fas fa-check text-success mr-3"></i> Todo en Profesional +</li>
-                        <li class="flex items-center"><i class="fas fa-check text-success mr-3"></i> API personalizada</li>
-                        <li class="flex items-center"><i class="fas fa-check text-success mr-3"></i> Integraciones custom</li>
-                        <li class="flex items-center"><i class="fas fa-check text-success mr-3"></i> Onboarding dedicado</li>
-                        <li class="flex items-center"><i class="fas fa-check text-success mr-3"></i> Soporte 24/7</li>
-                        <li class="flex items-center"><i class="fas fa-check text-success mr-3"></i> Account manager</li>
-                    </ul>
-                    <a href="#contacto" class="block text-center bg-gray-100 text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-200 transition-all duration-300">
-                        Contactar Ventas
-                    </a>
-                </div>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Feature 1 -->
+            <div
+              class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+            >
+              <div
+                class="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-wallet text-white text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                Gestión Financiera
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Control total de mensualidades, gastos comunes y reportes
+                financieros en tiempo real con transparencia absoluta.
+              </p>
+              <ul class="space-y-2 text-sm text-gray-600">
+                <li class="flex items-center">
+                  <i class="fas fa-check text-success mr-2"></i> Control de
+                  pagos
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-success mr-2"></i> Gastos
+                  comunitarios
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-success mr-2"></i> Reportes
+                  automáticos
+                </li>
+              </ul>
             </div>
 
-            <div class="text-center mt-12">
+            <!-- Feature 2 -->
+            <div
+              class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+            >
+              <div
+                class="w-16 h-16 bg-gradient-to-r from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-users text-white text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Feed Vecinal</h3>
+              <p class="text-gray-600 mb-4">
+                Red social privada para tu comunidad. Comparte anuncios, eventos
+                y mantén a todos informados.
+              </p>
+              <ul class="space-y-2 text-sm text-gray-600">
+                <li class="flex items-center">
+                  <i class="fas fa-check text-success mr-2"></i> Publicaciones y
+                  anuncios
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-success mr-2"></i> Eventos
+                  comunitarios
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-success mr-2"></i> Notificaciones
+                  push
+                </li>
+              </ul>
+            </div>
+
+            <!-- Feature 3 -->
+            <div
+              class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+            >
+              <div
+                class="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-xl flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-calendar-check text-white text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                Reservaciones
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Sistema inteligente para reservar áreas comunes como salón de
+                fiestas, gym, alberca y más.
+              </p>
+              <ul class="space-y-2 text-sm text-gray-600">
+                <li class="flex items-center">
+                  <i class="fas fa-check text-success mr-2"></i> Calendario
+                  compartido
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-success mr-2"></i> Gestión de
+                  amenidades
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-success mr-2"></i> Sin conflictos
+                  de horario
+                </li>
+              </ul>
+            </div>
+
+            <!-- Feature 4 -->
+            <div
+              class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+            >
+              <div
+                class="w-16 h-16 bg-gradient-to-r from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-chart-pie text-white text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                Dashboard Analytics
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Métricas y estadísticas en tiempo real para tomar decisiones
+                informadas sobre tu comunidad.
+              </p>
+              <ul class="space-y-2 text-sm text-gray-600">
+                <li class="flex items-center">
+                  <i class="fas fa-check text-success mr-2"></i> KPIs en tiempo
+                  real
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-success mr-2"></i> Gráficas
+                  interactivas
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-success mr-2"></i> Actividad
+                  semanal
+                </li>
+              </ul>
+            </div>
+
+            <!-- Feature 5 -->
+            <div
+              class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+            >
+              <div
+                class="w-16 h-16 bg-gradient-to-r from-pink-500 to-pink-600 rounded-xl flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-poll text-white text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                Encuestas y Votaciones
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Toma decisiones democráticas con encuestas digitales y
+                votaciones en tiempo real.
+              </p>
+              <ul class="space-y-2 text-sm text-gray-600">
+                <li class="flex items-center">
+                  <i class="fas fa-check text-success mr-2"></i> Votaciones
+                  anónimas
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-success mr-2"></i> Resultados
+                  instantáneos
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-success mr-2"></i> Participación
+                  mejorada
+                </li>
+              </ul>
+            </div>
+
+            <!-- Feature 6 -->
+            <div
+              class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+            >
+              <div
+                class="w-16 h-16 bg-gradient-to-r from-indigo-500 to-indigo-600 rounded-xl flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-home text-white text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                Gestión de Casas
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Administra casas, departamentos y miembros con sistema de
+                códigos de invitación únicos.
+              </p>
+              <ul class="space-y-2 text-sm text-gray-600">
+                <li class="flex items-center">
+                  <i class="fas fa-check text-success mr-2"></i> Directorio de
+                  vecinos
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-success mr-2"></i> Roles y
+                  permisos
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-success mr-2"></i> Códigos de
+                  invitación
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Benefits by User Type -->
+      <section id="beneficios" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">
+              Beneficios para <span class="text-primary">todos</span>
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+              Vecinity está diseñado para mejorar la experiencia de cada miembro
+              de tu comunidad
+            </p>
+          </div>
+
+          <div class="grid lg:grid-cols-3 gap-8">
+            <!-- For Admins -->
+            <div
+              class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 border-2 border-blue-200"
+            >
+              <div class="text-center mb-6">
+                <div
+                  class="w-20 h-20 bg-gradient-to-r from-primary to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4"
+                >
+                  <i class="fas fa-shield-alt text-white text-3xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900">
+                  Para Administradores
+                </h3>
+              </div>
+              <ul class="space-y-4">
+                <li class="flex items-start">
+                  <i class="fas fa-star text-warning text-xl mr-3 mt-1"></i>
+                  <span class="text-gray-700"
+                    >Ahorra hasta <strong>10 horas semanales</strong> en tareas
+                    administrativas</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-star text-warning text-xl mr-3 mt-1"></i>
+                  <span class="text-gray-700"
+                    >Aumenta la <strong>transparencia financiera</strong> y
+                    reduce quejas</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-star text-warning text-xl mr-3 mt-1"></i>
+                  <span class="text-gray-700"
+                    >Mejora la <strong>recaudación</strong> hasta un 25%</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-star text-warning text-xl mr-3 mt-1"></i>
+                  <span class="text-gray-700"
+                    >Reportes automáticos para <strong>asambleas</strong></span
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- For Residents -->
+            <div
+              class="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-8 border-2 border-green-200"
+            >
+              <div class="text-center mb-6">
+                <div
+                  class="w-20 h-20 bg-gradient-to-r from-success to-green-600 rounded-full flex items-center justify-center mx-auto mb-4"
+                >
+                  <i class="fas fa-user-friends text-white text-3xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900">Para Vecinos</h3>
+              </div>
+              <ul class="space-y-4">
+                <li class="flex items-start">
+                  <i class="fas fa-star text-warning text-xl mr-3 mt-1"></i>
+                  <span class="text-gray-700"
+                    >Mantente <strong>siempre informado</strong> de eventos y
+                    noticias</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-star text-warning text-xl mr-3 mt-1"></i>
+                  <span class="text-gray-700"
+                    >Consulta tus <strong>pagos y gastos</strong> desde tu
+                    celular</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-star text-warning text-xl mr-3 mt-1"></i>
+                  <span class="text-gray-700"
+                    >Reserva áreas comunes <strong>sin llamadas</strong> ni
+                    filas</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-star text-warning text-xl mr-3 mt-1"></i>
+                  <span class="text-gray-700"
+                    >Participa en
+                    <strong>decisiones comunitarias</strong> fácilmente</span
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- For Communities -->
+            <div
+              class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-8 border-2 border-purple-200"
+            >
+              <div class="text-center mb-6">
+                <div
+                  class="w-20 h-20 bg-gradient-to-r from-secondary to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4"
+                >
+                  <i class="fas fa-building text-white text-3xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900">
+                  Para tu Comunidad
+                </h3>
+              </div>
+              <ul class="space-y-4">
+                <li class="flex items-start">
+                  <i class="fas fa-star text-warning text-xl mr-3 mt-1"></i>
+                  <span class="text-gray-700"
+                    >Incrementa la <strong>convivencia</strong> entre
+                    vecinos</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-star text-warning text-xl mr-3 mt-1"></i>
+                  <span class="text-gray-700"
+                    >Reduce <strong>conflictos</strong> con mejor
+                    comunicación</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-star text-warning text-xl mr-3 mt-1"></i>
+                  <span class="text-gray-700"
+                    >Aumenta el <strong>valor</strong> de las propiedades</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-star text-warning text-xl mr-3 mt-1"></i>
+                  <span class="text-gray-700"
+                    >Construye una comunidad más <strong>unida</strong></span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How It Works -->
+      <section class="py-20 bg-gradient-to-br from-gray-50 to-purple-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">
+              Comienza en <span class="text-primary">3 simples pasos</span>
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+              Implementar Vecinity en tu comunidad es rápido y sencillo
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-8">
+            <!-- Step 1 -->
+            <div class="relative">
+              <div
+                class="bg-white rounded-2xl p-8 shadow-lg text-center h-full"
+              >
+                <div
+                  class="w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold"
+                >
+                  1
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Regístrate</h3>
                 <p class="text-gray-600">
-                    <i class="fas fa-shield-alt text-success mr-2"></i>
-                    Prueba gratis por 30 días. Sin tarjeta de crédito requerida.
+                  Crea tu comunidad en menos de 5 minutos. Solo necesitas
+                  información básica de tu fraccionamiento o condominio.
                 </p>
+              </div>
+              <div
+                class="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2"
+              >
+                <i class="fas fa-arrow-right text-primary text-3xl"></i>
+              </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Stats Section -->
-    <section class="py-20 bg-gradient-to-r from-primary to-secondary text-white">
+            <!-- Step 2 -->
+            <div class="relative">
+              <div
+                class="bg-white rounded-2xl p-8 shadow-lg text-center h-full"
+              >
+                <div
+                  class="w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold"
+                >
+                  2
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">
+                  Invita a tus vecinos
+                </h3>
+                <p class="text-gray-600">
+                  Genera códigos de invitación únicos y compártelos. Tus vecinos
+                  se unen en segundos desde cualquier dispositivo.
+                </p>
+              </div>
+              <div
+                class="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2"
+              >
+                <i class="fas fa-arrow-right text-primary text-3xl"></i>
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="bg-white rounded-2xl p-8 shadow-lg text-center h-full">
+              <div
+                class="w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold"
+              >
+                3
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">
+                ¡Listo para gestionar!
+              </h3>
+              <p class="text-gray-600">
+                Empieza a administrar finanzas, publicar anuncios, crear eventos
+                y mucho más desde tu dashboard.
+              </p>
+            </div>
+          </div>
+
+          <div class="text-center mt-12">
+            <a
+              href="#contacto"
+              class="inline-block bg-gradient-to-r from-primary to-secondary text-white px-10 py-4 rounded-lg font-semibold text-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+            >
+              <i class="fas fa-rocket mr-2"></i>
+              Comenzar Ahora
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing Section -->
+      <section id="planes" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-4 gap-8 text-center">
-                <div>
-                    <div class="text-5xl font-bold mb-2">500+</div>
-                    <div class="text-blue-100">Comunidades Activas</div>
-                </div>
-                <div>
-                    <div class="text-5xl font-bold mb-2">10,000+</div>
-                    <div class="text-blue-100">Vecinos Conectados</div>
-                </div>
-                <div>
-                    <div class="text-5xl font-bold mb-2">$50M+</div>
-                    <div class="text-blue-100">Gestionados Mensualmente</div>
-                </div>
-                <div>
-                    <div class="text-5xl font-bold mb-2">95%</div>
-                    <div class="text-blue-100">Satisfacción</div>
-                </div>
-            </div>
-        </div>
-    </section>
+          <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">
+              Planes que se adaptan a tu
+              <span class="text-primary">comunidad</span>
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+              Precios transparentes y justos. Sin costos ocultos.
+            </p>
+          </div>
 
-    <!-- FAQ Section -->
-    <section class="py-20 bg-gray-50">
+          <div class="grid md:grid-cols-3 gap-8">
+            <!-- Basic Plan -->
+            <div
+              class="bg-white rounded-2xl p-8 border-2 border-gray-200 hover:border-primary transition-all duration-300 hover:shadow-xl"
+            >
+              <div class="text-center mb-6">
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">Básico</h3>
+                <p class="text-gray-600">Ideal para comunidades pequeñas</p>
+              </div>
+              <div class="text-center mb-8">
+                <div class="text-5xl font-bold text-gray-900 mb-2">
+                  $499<span class="text-2xl text-gray-600">/mes</span>
+                </div>
+                <p class="text-sm text-gray-600">Hasta 50 casas</p>
+              </div>
+              <ul class="space-y-4 mb-8">
+                <li class="flex items-center">
+                  <i class="fas fa-check text-success mr-3"></i> Dashboard
+                  básico
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-success mr-3"></i> Gestión de
+                  pagos
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-success mr-3"></i> Feed
+                  comunitario
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-success mr-3"></i> Calendario de
+                  eventos
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-success mr-3"></i> Soporte por
+                  email
+                </li>
+              </ul>
+              <a
+                href="#contacto"
+                class="block text-center bg-gray-100 text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-200 transition-all duration-300"
+              >
+                Empezar Prueba Gratis
+              </a>
+            </div>
+
+            <!-- Professional Plan -->
+            <div
+              class="bg-gradient-to-br from-primary to-secondary rounded-2xl p-8 text-white relative transform scale-105 shadow-2xl"
+            >
+              <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                <span
+                  class="bg-warning text-white px-4 py-1 rounded-full text-sm font-semibold"
+                >
+                  MÁS POPULAR
+                </span>
+              </div>
+              <div class="text-center mb-6">
+                <h3 class="text-2xl font-bold mb-2">Profesional</h3>
+                <p class="text-blue-100">Para comunidades medianas</p>
+              </div>
+              <div class="text-center mb-8">
+                <div class="text-5xl font-bold mb-2">
+                  $999<span class="text-2xl text-blue-100">/mes</span>
+                </div>
+                <p class="text-sm text-blue-100">Hasta 150 casas</p>
+              </div>
+              <ul class="space-y-4 mb-8">
+                <li class="flex items-center">
+                  <i class="fas fa-check mr-3"></i> Todo en Básico +
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check mr-3"></i> Dashboard avanzado
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check mr-3"></i> Reportes financieros
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check mr-3"></i> Encuestas y votaciones
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check mr-3"></i> Reservación de áreas
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check mr-3"></i> Soporte prioritario
+                </li>
+              </ul>
+              <a
+                href="#contacto"
+                class="block text-center bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300"
+              >
+                Empezar Prueba Gratis
+              </a>
+            </div>
+
+            <!-- Enterprise Plan -->
+            <div
+              class="bg-white rounded-2xl p-8 border-2 border-gray-200 hover:border-primary transition-all duration-300 hover:shadow-xl"
+            >
+              <div class="text-center mb-6">
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">
+                  Enterprise
+                </h3>
+                <p class="text-gray-600">Para grandes comunidades</p>
+              </div>
+              <div class="text-center mb-8">
+                <div class="text-5xl font-bold text-gray-900 mb-2">Custom</div>
+                <p class="text-sm text-gray-600">Casas ilimitadas</p>
+              </div>
+              <ul class="space-y-4 mb-8">
+                <li class="flex items-center">
+                  <i class="fas fa-check text-success mr-3"></i> Todo en
+                  Profesional +
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-success mr-3"></i> API
+                  personalizada
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-success mr-3"></i> Integraciones
+                  custom
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-success mr-3"></i> Onboarding
+                  dedicado
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-success mr-3"></i> Soporte 24/7
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-success mr-3"></i> Account manager
+                </li>
+              </ul>
+              <a
+                href="#contacto"
+                class="block text-center bg-gray-100 text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-200 transition-all duration-300"
+              >
+                Contactar Ventas
+              </a>
+            </div>
+          </div>
+
+          <div class="text-center mt-12">
+            <p class="text-gray-600">
+              <i class="fas fa-shield-alt text-success mr-2"></i>
+              Prueba gratis por 30 días. Sin tarjeta de crédito requerida.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats Section -->
+      <section
+        class="py-20 bg-gradient-to-r from-primary to-secondary text-white"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid md:grid-cols-4 gap-8 text-center">
+            <div>
+              <div class="text-5xl font-bold mb-2">500+</div>
+              <div class="text-blue-100">Comunidades Activas</div>
+            </div>
+            <div>
+              <div class="text-5xl font-bold mb-2">10,000+</div>
+              <div class="text-blue-100">Vecinos Conectados</div>
+            </div>
+            <div>
+              <div class="text-5xl font-bold mb-2">$50M+</div>
+              <div class="text-blue-100">Gestionados Mensualmente</div>
+            </div>
+            <div>
+              <div class="text-5xl font-bold mb-2">95%</div>
+              <div class="text-blue-100">Satisfacción</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="py-20 bg-gray-50">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">
-                    Preguntas <span class="text-primary">Frecuentes</span>
-                </h2>
+          <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">
+              Preguntas <span class="text-primary">Frecuentes</span>
+            </h2>
+          </div>
+
+          <div class="space-y-4">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden">
+              <button
+                class="faq-button w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors"
+              >
+                <span class="font-semibold text-gray-900"
+                  >¿Cuánto tiempo toma implementar Vecinity?</span
+                >
+                <i class="fas fa-chevron-down text-primary"></i>
+              </button>
+              <div class="faq-content hidden p-6 pt-0 text-gray-600">
+                La implementación es inmediata. Puedes crear tu comunidad y
+                empezar a invitar vecinos en menos de 5 minutos. Nuestro equipo
+                te guiará en la configuración inicial.
+              </div>
             </div>
 
-            <div class="space-y-4">
-                <div class="bg-white rounded-xl shadow-md overflow-hidden">
-                    <button class="faq-button w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors">
-                        <span class="font-semibold text-gray-900">¿Cuánto tiempo toma implementar Vecinity?</span>
-                        <i class="fas fa-chevron-down text-primary"></i>
-                    </button>
-                    <div class="faq-content hidden p-6 pt-0 text-gray-600">
-                        La implementación es inmediata. Puedes crear tu comunidad y empezar a invitar vecinos en menos de 5 minutos. Nuestro equipo te guiará en la configuración inicial.
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-xl shadow-md overflow-hidden">
-                    <button class="faq-button w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors">
-                        <span class="font-semibold text-gray-900">¿Necesito conocimientos técnicos?</span>
-                        <i class="fas fa-chevron-down text-primary"></i>
-                    </button>
-                    <div class="faq-content hidden p-6 pt-0 text-gray-600">
-                        No. Vecinity está diseñado para ser intuitivo y fácil de usar. Si sabes usar WhatsApp o Facebook, sabrás usar Vecinity. Además, ofrecemos capacitación gratuita.
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-xl shadow-md overflow-hidden">
-                    <button class="faq-button w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors">
-                        <span class="font-semibold text-gray-900">¿Mis datos están seguros?</span>
-                        <i class="fas fa-chevron-down text-primary"></i>
-                    </button>
-                    <div class="faq-content hidden p-6 pt-0 text-gray-600">
-                        Absolutamente. Utilizamos encriptación de nivel bancario, autenticación biométrica y cumplimos con todas las normativas de protección de datos. Tus datos nunca se comparten con terceros.
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-xl shadow-md overflow-hidden">
-                    <button class="faq-button w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors">
-                        <span class="font-semibold text-gray-900">¿Puedo cancelar en cualquier momento?</span>
-                        <i class="fas fa-chevron-down text-primary"></i>
-                    </button>
-                    <div class="faq-content hidden p-6 pt-0 text-gray-600">
-                        Sí, sin penalizaciones. No hay contratos a largo plazo. Puedes cancelar tu suscripción cuando quieras y conservarás acceso hasta el final del período pagado.
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-xl shadow-md overflow-hidden">
-                    <button class="faq-button w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors">
-                        <span class="font-semibold text-gray-900">¿Funciona en iOS y Android?</span>
-                        <i class="fas fa-chevron-down text-primary"></i>
-                    </button>
-                    <div class="faq-content hidden p-6 pt-0 text-gray-600">
-                        Sí, Vecinity funciona perfectamente en iPhone, Android y también desde cualquier navegador web. Una sola cuenta funciona en todos tus dispositivos.
-                    </div>
-                </div>
+            <div class="bg-white rounded-xl shadow-md overflow-hidden">
+              <button
+                class="faq-button w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors"
+              >
+                <span class="font-semibold text-gray-900"
+                  >¿Necesito conocimientos técnicos?</span
+                >
+                <i class="fas fa-chevron-down text-primary"></i>
+              </button>
+              <div class="faq-content hidden p-6 pt-0 text-gray-600">
+                No. Vecinity está diseñado para ser intuitivo y fácil de usar.
+                Si sabes usar WhatsApp o Facebook, sabrás usar Vecinity. Además,
+                ofrecemos capacitación gratuita.
+              </div>
             </div>
+
+            <div class="bg-white rounded-xl shadow-md overflow-hidden">
+              <button
+                class="faq-button w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors"
+              >
+                <span class="font-semibold text-gray-900"
+                  >¿Mis datos están seguros?</span
+                >
+                <i class="fas fa-chevron-down text-primary"></i>
+              </button>
+              <div class="faq-content hidden p-6 pt-0 text-gray-600">
+                Absolutamente. Utilizamos encriptación de nivel bancario,
+                autenticación biométrica y cumplimos con todas las normativas de
+                protección de datos. Tus datos nunca se comparten con terceros.
+              </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md overflow-hidden">
+              <button
+                class="faq-button w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors"
+              >
+                <span class="font-semibold text-gray-900"
+                  >¿Puedo cancelar en cualquier momento?</span
+                >
+                <i class="fas fa-chevron-down text-primary"></i>
+              </button>
+              <div class="faq-content hidden p-6 pt-0 text-gray-600">
+                Sí, sin penalizaciones. No hay contratos a largo plazo. Puedes
+                cancelar tu suscripción cuando quieras y conservarás acceso
+                hasta el final del período pagado.
+              </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md overflow-hidden">
+              <button
+                class="faq-button w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors"
+              >
+                <span class="font-semibold text-gray-900"
+                  >¿Funciona en iOS y Android?</span
+                >
+                <i class="fas fa-chevron-down text-primary"></i>
+              </button>
+              <div class="faq-content hidden p-6 pt-0 text-gray-600">
+                Sí, Vecinity funciona perfectamente en iPhone, Android y también
+                desde cualquier navegador web. Una sola cuenta funciona en todos
+                tus dispositivos.
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Contact Form Section -->
-    <section id="contacto" class="py-20 bg-gradient-to-br from-blue-50 to-purple-50">
+      <!-- Contact Form Section -->
+      <section
+        id="contacto"
+        class="py-20 bg-gradient-to-br from-blue-50 to-purple-50"
+      >
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">
-                    ¿Listo para transformar tu <span class="text-primary">comunidad?</span>
-                </h2>
-                <p class="text-xl text-gray-600">
-                    Completa el formulario y nuestro equipo se pondrá en contacto contigo en menos de 24 horas
-                </p>
-            </div>
+          <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">
+              ¿Listo para transformar tu
+              <span class="text-primary">comunidad?</span>
+            </h2>
+            <p class="text-xl text-gray-600">
+              Completa el formulario y nuestro equipo se pondrá en contacto
+              contigo en menos de 24 horas
+            </p>
+          </div>
 
-            <div class="bg-white rounded-2xl shadow-2xl p-8 md:p-12">
-                <form id="contact-form" class="space-y-6">
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div>
-                            <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">Nombre completo *</label>
-                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all" placeholder="Juan Pérez">
-                        </div>
-                        <div>
-                            <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">Email *</label>
-                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all" placeholder="juan@ejemplo.com">
-                        </div>
-                    </div>
-
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div>
-                            <label for="phone" class="block text-sm font-semibold text-gray-700 mb-2">Teléfono *</label>
-                            <input type="tel" id="phone" name="phone" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all" placeholder="+52 123 456 7890">
-                        </div>
-                        <div>
-                            <label for="community_type" class="block text-sm font-semibold text-gray-700 mb-2">Tipo de comunidad *</label>
-                            <select id="community_type" name="community_type" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all">
-                                <option value="">Selecciona una opción</option>
-                                <option value="condominio">Condominio</option>
-                                <option value="fraccionamiento">Fraccionamiento</option>
-                                <option value="edificio">Edificio</option>
-                                <option value="privada">Privada</option>
-                                <option value="complejo">Complejo residencial</option>
-                                <option value="otro">Otro</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div>
-                        <label for="units_count" class="block text-sm font-semibold text-gray-700 mb-2">Número de casas/departamentos *</label>
-                        <select id="units_count" name="units_count" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all">
-                            <option value="">Selecciona un rango</option>
-                            <option value="1-20">1-20</option>
-                            <option value="21-50">21-50</option>
-                            <option value="51-100">51-100</option>
-                            <option value="101-200">101-200</option>
-                            <option value="201+">Más de 200</option>
-                        </select>
-                    </div>
-
-                    <div>
-                        <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">Mensaje (opcional)</label>
-                        <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all resize-none" placeholder="Cuéntanos más sobre tu comunidad y tus necesidades..."></textarea>
-                    </div>
-
-                    <div class="flex items-start">
-                        <input type="checkbox" id="privacy" name="privacy" required class="mt-1 mr-3">
-                        <label for="privacy" class="text-sm text-gray-600">
-                            Acepto la <a href="#" class="text-primary hover:underline">política de privacidad</a> y el <a href="#" class="text-primary hover:underline">tratamiento de datos</a> *
-                        </label>
-                    </div>
-
-                    <div>
-                        <button type="submit" class="w-full bg-gradient-to-r from-primary to-secondary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                            <i class="fas fa-paper-plane mr-2"></i>
-                            Solicitar Demo Gratuita
-                        </button>
-                    </div>
-
-                    <div id="form-message" class="hidden text-center p-4 rounded-lg"></div>
-                </form>
-            </div>
-
-            <div class="text-center mt-12">
-                <p class="text-gray-600 mb-4">O contáctanos directamente:</p>
-                <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8">
-                    <a href="mailto:contacto@vecinity.mx" class="flex items-center text-primary hover:text-secondary transition-colors">
-                        <i class="fas fa-envelope mr-2"></i>
-                        contacto@vecinity.mx
-                    </a>
-                    <a href="tel:+525555555555" class="flex items-center text-primary hover:text-secondary transition-colors">
-                        <i class="fas fa-phone mr-2"></i>
-                        +52 55 5555 5555
-                    </a>
+          <div class="bg-white rounded-2xl shadow-2xl p-8 md:p-12">
+            <form id="contact-form" class="space-y-6">
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label
+                    for="name"
+                    class="block text-sm font-semibold text-gray-700 mb-2"
+                    >Nombre completo *</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
+                    placeholder="Juan Pérez"
+                  />
                 </div>
+                <div>
+                  <label
+                    for="email"
+                    class="block text-sm font-semibold text-gray-700 mb-2"
+                    >Email *</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
+                    placeholder="juan@ejemplo.com"
+                  />
+                </div>
+              </div>
+
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label
+                    for="phone"
+                    class="block text-sm font-semibold text-gray-700 mb-2"
+                    >Teléfono *</label
+                  >
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    required
+                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
+                    placeholder="+52 123 456 7890"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="community_type"
+                    class="block text-sm font-semibold text-gray-700 mb-2"
+                    >Tipo de comunidad *</label
+                  >
+                  <select
+                    id="community_type"
+                    name="community_type"
+                    required
+                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
+                  >
+                    <option value="">Selecciona una opción</option>
+                    <option value="condominio">Condominio</option>
+                    <option value="fraccionamiento">Fraccionamiento</option>
+                    <option value="edificio">Edificio</option>
+                    <option value="privada">Privada</option>
+                    <option value="complejo">Complejo residencial</option>
+                    <option value="otro">Otro</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label
+                  for="units_count"
+                  class="block text-sm font-semibold text-gray-700 mb-2"
+                  >Número de casas/departamentos *</label
+                >
+                <select
+                  id="units_count"
+                  name="units_count"
+                  required
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
+                >
+                  <option value="">Selecciona un rango</option>
+                  <option value="1-20">1-20</option>
+                  <option value="21-50">21-50</option>
+                  <option value="51-100">51-100</option>
+                  <option value="101-200">101-200</option>
+                  <option value="201+">Más de 200</option>
+                </select>
+              </div>
+
+              <div>
+                <label
+                  for="message"
+                  class="block text-sm font-semibold text-gray-700 mb-2"
+                  >Mensaje (opcional)</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all resize-none"
+                  placeholder="Cuéntanos más sobre tu comunidad y tus necesidades..."
+                ></textarea>
+              </div>
+
+              <div class="flex items-start">
+                <input
+                  type="checkbox"
+                  id="privacy"
+                  name="privacy"
+                  required
+                  class="mt-1 mr-3"
+                />
+                <label for="privacy" class="text-sm text-gray-600">
+                  Acepto la
+                  <a href="#" class="text-primary hover:underline"
+                    >política de privacidad</a
+                  >
+                  y el
+                  <a href="#" class="text-primary hover:underline"
+                    >tratamiento de datos</a
+                  >
+                  *
+                </label>
+              </div>
+
+              <div>
+                <button
+                  type="submit"
+                  class="w-full bg-gradient-to-r from-primary to-secondary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                >
+                  <i class="fas fa-paper-plane mr-2"></i>
+                  Solicitar Demo Gratuita
+                </button>
+              </div>
+
+              <div
+                id="form-message"
+                class="hidden text-center p-4 rounded-lg"
+              ></div>
+            </form>
+          </div>
+
+          <div class="text-center mt-12">
+            <p class="text-gray-600 mb-4">O contáctanos directamente:</p>
+            <div
+              class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8"
+            >
+              <a
+                href="mailto:contacto@vecinity.mx"
+                class="flex items-center text-primary hover:text-secondary transition-colors"
+              >
+                <i class="fas fa-envelope mr-2"></i>
+                contacto@vecinity.mx
+              </a>
+              <a
+                href="tel:+525555555555"
+                class="flex items-center text-primary hover:text-secondary transition-colors"
+              >
+                <i class="fas fa-phone mr-2"></i>
+                +52 55 5555 5555
+              </a>
             </div>
+          </div>
         </div>
-    </section>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-4 gap-8 mb-8">
-                <!-- Logo & Description -->
-                <div class="col-span-2 md:col-span-1">
-                    <div class="flex items-center space-x-3 mb-4">
-                        <picture>
-                            <source type="image/webp" srcset="assets/images/logo.webp" width="40" height="40">
-                            <img src="assets/images/logo.png" alt="Vecinity Logo" class="w-10 h-10" width="40" height="40" loading="lazy">
-                        </picture>
-                        <span class="text-xl font-bold">Vecinity</span>
-                    </div>
-                    <p class="text-gray-400 text-sm">
-                        La plataforma integral para gestionar tu comunidad de forma inteligente y eficiente.
-                    </p>
-                </div>
-
-                <!-- Product -->
-                <div>
-                    <h4 class="font-semibold mb-4">Producto</h4>
-                    <ul class="space-y-2 text-sm text-gray-400">
-                        <li><a href="#caracteristicas" class="hover:text-white transition-colors">Características</a></li>
-                        <li><a href="#planes" class="hover:text-white transition-colors">Precios</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Casos de Éxito</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Actualizaciones</a></li>
-                    </ul>
-                </div>
-
-                <!-- Company -->
-                <div>
-                    <h4 class="font-semibold mb-4">Empresa</h4>
-                    <ul class="space-y-2 text-sm text-gray-400">
-                        <li><a href="#" class="hover:text-white transition-colors">Sobre Nosotros</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
-                        <li><a href="#contacto" class="hover:text-white transition-colors">Contacto</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Trabaja con Nosotros</a></li>
-                    </ul>
-                </div>
-
-                <!-- Legal -->
-                <div>
-                    <h4 class="font-semibold mb-4">Legal</h4>
-                    <ul class="space-y-2 text-sm text-gray-400">
-                        <li><a href="#" class="hover:text-white transition-colors">Privacidad</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Términos de Uso</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Aviso Legal</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Cookies</a></li>
-                    </ul>
-                </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-4 gap-8 mb-8">
+          <!-- Logo & Description -->
+          <div class="col-span-2 md:col-span-1">
+            <div class="flex items-center space-x-3 mb-4">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="assets/images/logo.webp"
+                  width="40"
+                  height="40"
+                />
+                <img
+                  src="assets/images/logo.webp"
+                  alt="Vecinity Logo"
+                  class="w-10 h-10"
+                  width="40"
+                  height="40"
+                  loading="lazy"
+                />
+              </picture>
+              <span class="text-xl font-bold">Vecinity</span>
             </div>
+            <p class="text-gray-400 text-sm">
+              La plataforma integral para gestionar tu comunidad de forma
+              inteligente y eficiente.
+            </p>
+          </div>
 
-            <!-- Bottom Bar -->
-            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-400 text-sm mb-4 md:mb-0">
-                    © 2024 Vecinity. Todos los derechos reservados.
-                </p>
-                <div class="flex space-x-6">
-                    <a href="#" class="text-gray-300 hover:text-white transition-colors" aria-label="Facebook de Vecinity">
-                        <i class="fab fa-facebook text-xl"></i>
-                    </a>
-                    <a href="#" class="text-gray-300 hover:text-white transition-colors" aria-label="Twitter de Vecinity">
-                        <i class="fab fa-twitter text-xl"></i>
-                    </a>
-                    <a href="#" class="text-gray-300 hover:text-white transition-colors" aria-label="Instagram de Vecinity">
-                        <i class="fab fa-instagram text-xl"></i>
-                    </a>
-                    <a href="#" class="text-gray-300 hover:text-white transition-colors" aria-label="LinkedIn de Vecinity">
-                        <i class="fab fa-linkedin text-xl"></i>
-                    </a>
-                </div>
-            </div>
+          <!-- Product -->
+          <div>
+            <h4 class="font-semibold mb-4">Producto</h4>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li>
+                <a
+                  href="#caracteristicas"
+                  class="hover:text-white transition-colors"
+                  >Características</a
+                >
+              </li>
+              <li>
+                <a href="#planes" class="hover:text-white transition-colors"
+                  >Precios</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Casos de Éxito</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Actualizaciones</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Company -->
+          <div>
+            <h4 class="font-semibold mb-4">Empresa</h4>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Sobre Nosotros</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors">Blog</a>
+              </li>
+              <li>
+                <a href="#contacto" class="hover:text-white transition-colors"
+                  >Contacto</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Trabaja con Nosotros</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Legal -->
+          <div>
+            <h4 class="font-semibold mb-4">Legal</h4>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Privacidad</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Términos de Uso</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Aviso Legal</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Cookies</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
+
+        <!-- Bottom Bar -->
+        <div
+          class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center"
+        >
+          <p class="text-gray-400 text-sm mb-4 md:mb-0">
+            © 2024 Vecinity. Todos los derechos reservados.
+          </p>
+          <div class="flex space-x-6">
+            <a
+              href="#"
+              class="text-gray-300 hover:text-white transition-colors"
+              aria-label="Facebook de Vecinity"
+            >
+              <i class="fab fa-facebook text-xl"></i>
+            </a>
+            <a
+              href="#"
+              class="text-gray-300 hover:text-white transition-colors"
+              aria-label="Twitter de Vecinity"
+            >
+              <i class="fab fa-twitter text-xl"></i>
+            </a>
+            <a
+              href="#"
+              class="text-gray-300 hover:text-white transition-colors"
+              aria-label="Instagram de Vecinity"
+            >
+              <i class="fab fa-instagram text-xl"></i>
+            </a>
+            <a
+              href="#"
+              class="text-gray-300 hover:text-white transition-colors"
+              aria-label="LinkedIn de Vecinity"
+            >
+              <i class="fab fa-linkedin text-xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <!-- CSS Loader Fallback -->
     <script>
-    !function(){"use strict";var e=function(e){var t=document.createElement("link");t.rel="stylesheet",t.href=e,document.head.appendChild(t)};window.addEventListener("load",function(){for(var t=document.querySelectorAll('link[media="print"][onload]'),n=0;n<t.length;n++)t[n].media="all"})}();
+      !(function () {
+        "use strict";
+        var e = function (e) {
+          var t = document.createElement("link");
+          (t.rel = "stylesheet"), (t.href = e), document.head.appendChild(t);
+        };
+        window.addEventListener("load", function () {
+          for (
+            var t = document.querySelectorAll('link[media="print"][onload]'),
+              n = 0;
+            n < t.length;
+            n++
+          )
+            t[n].media = "all";
+        });
+      })();
+    </script>
+
+    <!-- Page Loader Script -->
+    <script>
+      window.addEventListener("load", function () {
+        var loader = document.getElementById("page-loader");
+        if (loader) {
+          loader.classList.add("loaded");
+          setTimeout(function () {
+            loader.remove();
+          }, 500);
+        }
+      });
     </script>
 
     <!-- Custom JavaScript - Minified & Deferred -->
     <script src="script.min.js" defer></script>
-</body>
+  </body>
 </html>
