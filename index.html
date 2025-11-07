@@ -164,20 +164,20 @@
       crossorigin
     />
 
-    <!-- Inter Font - Inline Critical -->
+    <!-- Inter Font - Inline Critical with optional display -->
     <style>
       @font-face {
         font-family: "Inter";
         font-style: normal;
         font-weight: 400;
-        font-display: swap;
+        font-display: optional;
         src: url("fonts/inter-400.ttf") format("truetype");
       }
       @font-face {
         font-family: "Inter";
         font-style: normal;
         font-weight: 700;
-        font-display: swap;
+        font-display: optional;
         src: url("fonts/inter-700.ttf") format("truetype");
       }
     </style>
@@ -516,7 +516,7 @@
           transform: rotate(360deg);
         }
       }
-      /* Page Loader */
+      /* Page Loader - No layout shift */
       #page-loader {
         position: fixed;
         top: 0;
@@ -529,11 +529,15 @@
         align-items: center;
         justify-content: center;
         z-index: 9999;
-        transition: opacity 0.5s ease, visibility 0.5s ease;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+        opacity: 1;
       }
       #page-loader.loaded {
         opacity: 0;
-        visibility: hidden;
+      }
+      body:not(.page-loaded) #page-loader {
+        pointer-events: all;
       }
       .loader-spinner {
         width: 60px;
@@ -558,6 +562,21 @@
         50% {
           opacity: 0.6;
         }
+      }
+      /* LCP and CLS optimizations */
+      .hero-section {
+        contain: layout style;
+      }
+      .hero-section h1 {
+        will-change: auto;
+      }
+      /* Prevent grid layout shifts */
+      .grid {
+        will-change: auto;
+      }
+      /* Early font rendering */
+      body {
+        text-rendering: optimizeSpeed;
       }
     </style>
 
@@ -2068,15 +2087,14 @@
       })();
     </script>
 
-    <!-- Page Loader Script -->
+    <!-- Page Loader Script - No layout shift -->
     <script>
       window.addEventListener("load", function () {
+        document.body.classList.add("page-loaded");
         var loader = document.getElementById("page-loader");
         if (loader) {
           loader.classList.add("loaded");
-          setTimeout(function () {
-            loader.remove();
-          }, 500);
+          // Don't remove from DOM to avoid layout shift
         }
       });
     </script>
