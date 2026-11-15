@@ -4,7 +4,7 @@ echo "════════════════════════�
 echo ""
 
 # Configuración
-LOCAL_DIR="/Users/rzamarripa/Documents/Desarrollo/ClaudeCode/Vecinity/html"
+LOCAL_DIR="$(cd "$(dirname "$0")" && pwd)"
 cd "$LOCAL_DIR" || exit 1
 
 # Verifica archivos críticos
@@ -52,7 +52,7 @@ echo "════════════════════════�
 echo ""
 
 # AJUSTA ESTOS VALORES PARA TU SERVIDOR:
-SERVER="usuario@tu-servidor.com"
+SERVER="${VECINITY_SERVER:?Define VECINITY_SERVER (usuario@host) antes de desplegar}"
 REMOTE_PATH="/opt/docker/pagina_vecinity"
 
 echo "📤 1/5 - Subiendo index.html..."
@@ -75,8 +75,7 @@ echo "📤 5/5 - Subiendo configuración..."
 scp sitemap.xml manifest.json browserconfig.xml favicon.ico "$SERVER:$REMOTE_PATH/" && echo "   ✅ config files" || echo "   ❌ Error"
 
 echo ""
-echo "🔄 Reiniciando nginx..."
-ssh "$SERVER" "cd $REMOTE_PATH && docker-compose restart nginx" && echo "   ✅ Nginx reiniciado" || echo "   ❌ Error"
+# El nginx del host sirve directamente $REMOTE_PATH (sites-enabled/vecinity.conf): no requiere reinicio
 
 echo ""
 echo "════════════════════════════════════════════════════════════════"
